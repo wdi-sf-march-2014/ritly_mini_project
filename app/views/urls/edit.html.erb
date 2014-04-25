@@ -1,0 +1,16 @@
+<h2>Edit Link(edit)</h2>
+
+<%= form_for @url do |f| %>
+	<%= label_tag(:link, "Link") %>
+	<%= f.text_area :link, :class => "form-control" %>
+
+  <%= f.submit "Update", :class => "btn btn-warning" %>
+<% end %></br></br>
+
+
+
+<%= form_for @url do |f|  %>
+	<%=  link_to "Delete", @url, method: :delete, data: { confirm: "You sure?" }  %>
+<% end %></br></br>
+
+<%= link_to "Back To Home",root_path%>

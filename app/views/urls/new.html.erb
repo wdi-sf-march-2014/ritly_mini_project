@@ -1,0 +1,12 @@
+<h2> home: make a shortened url (new/root)</h2>
+
+<%= form_for @url do |f| %>
+  
+  <%= label_tag(:link, "Link:") %>
+  <%= f.text_area :link %>
+  <%= f.submit "Create Shortened Link" %>
+<% end %></br></br>
+
+<%= link_to "See All Links",urls_path%>
+
+<%# SecureRandom.urlsafe_base64(length_of_string). length_of_string %>
