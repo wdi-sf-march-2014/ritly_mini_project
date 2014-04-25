@@ -1,3 +1,5 @@
 Ritly::Application.routes.draw do
- root 'urls#index'
+ root 'urls#new'
+
+ resources :urls
 end
