@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  link: MyString
+  Hyperlink: MyString
+  random_string: MyString
+  text: MyString
+
+two:
+  link: MyString
+  Hyperlink: MyString
+  random_string: MyString
+  text: MyString

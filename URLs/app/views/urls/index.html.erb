@@ -1,0 +1,11 @@
+<h1> rilty </h1>
+
+<%= form_tag @urls do |f| %>
+
+  <%= label_tag(:link, "link:") %>
+  <%= f.text_field (:link) %></br>
+  
+   <%= f.submit "Shorten", :class =>"btn btn-success" %>
+<% end %>
+
+
