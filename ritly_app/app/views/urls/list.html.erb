@@ -1,0 +1,8 @@
+
+<% @urls.each do |url| %>
+  <!-- Link to the show method in the controller -->
+  <%= link_to url["link"], url_path(url[:id]) %>
+
+  <br>
+
+<% end %>

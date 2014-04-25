@@ -1,0 +1,11 @@
+<h1>Your New Random Link</h1>
+<p>Link: <%= @url['link']%></p>
+<p>Random String: <%= @url['random_string']%></p>
+<!-- The following if statement will continue to be -->
+<!-- nil, until we add data to done in the DB. -->
+
+ <%= link_to "delete", @url, method: :delete, data: { confirm: "You sure?" } , :class => "btn btn-danger btn-xs" %><br>
+
+<%= link_to "Back To Todo List",urls_path%>
+
+		
