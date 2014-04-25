@@ -1,6 +1,9 @@
 Ritly::Application.routes.draw do
   root 'urls#new'
   resources :urls
+  get '/go/:random_string', to: 'urls#go'
+  get '/go/:random_string/preview', to: 'urls#preview'
+
 #     Prefix Verb   URI Pattern              Controller#Action
 #     root GET    /                        urls#index
 #     urls GET    /urls(.:format)          urls#index
