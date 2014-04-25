@@ -1,0 +1,10 @@
+<h1> Your random generated link is:</h1>
+<h2> <%= @url.random_string %> </h2>
+<p>Links you to:  <em><%= @url.link %></em> </p>
+
+<p>Put localhost:3000/<%= @url.random_string %> in the browser to go to your site</p>
+
+<%= link_to "Oops wrong url", edit_url_path(@url.id) %>
+<a href= '/'>Here is a preview</a>
+<a href= '<%=@url.link%>'>Go to your site</a>
+

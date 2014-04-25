@@ -1,0 +1,13 @@
+<h1> All Ritlys </h1>
+
+<% @urls.each do |url| %>
+  <ul>
+  <%= link_to url.link, url_path(url.id) %>
+  <%= link_to "Edit Item", edit_url_path(url.id) %>
+  <%= link_to "Delete Item", url, method: :delete, data: { confirm: "Are you super super sure you want to do this?!" }, :class => "btn btn-danger btn-xs" %>
+  </ul>
+  <% end %>
+
+
+
+  <%= @urls.inspect %>

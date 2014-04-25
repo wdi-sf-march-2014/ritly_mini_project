@@ -1,0 +1,10 @@
+<h1> Oops!</h1><h2> Looks like you messed up your url. Re-type it below, we'll create a new random link.</h2>
+<h2>Enter the url you want a shortcut to</h2>
+<%= form_for @url do |f| %>
+
+  <%= label_tag(:link, "URL:") %>
+  <%= f.text_field :link %></br>
+
+  <%= f.submit "Submit" %>
+<% end %>
+<br><br>

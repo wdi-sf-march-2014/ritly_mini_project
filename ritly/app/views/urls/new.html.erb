@@ -1,0 +1,23 @@
+<h1>Ritly</h1>
+<h2>Enter the url you want a shortcut to</h2>
+<%= form_for @url do |f| %>
+
+  <%= label_tag(:link, "URL:") %>
+  <%= f.text_field :link %></br>
+
+  <%= f.submit "Submit" %>
+<% end %>
+<br><br>
+<h2> OR..</h2>
+<h3>Enter your url and create your own link
+
+<%= form_for @url do |f| %>
+
+  <%= label_tag(:link, "URL:") %>
+  <%= f.text_field :link %></br>
+
+  <%= label_tag(:random_string, "Your link:") %> 
+  <%= f.text_area :random_string %></br>
+
+  <%= f.submit "Go!" %>
+<% end %>

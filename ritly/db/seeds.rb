@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+urls = Url.create([
+  {link: "http://www.generalassemb.ly", random_string: "m1gpLH"},
+
+  {link: "www.google.com", random_string: "T7DViX"},
+
+   ])
