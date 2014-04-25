@@ -1,8 +1,8 @@
 <!-- form to create new url -->
 <h1>Create New URL</h1>
 
-<%= form_for :url do |f| %>
-	<%= f.text_field :link, :placeholder => "url" %><br>
+<%= form_for @url do |f| %>
+	<%= f.text_field :link, {:placeholder => "url", :size => "50"} %><br>
 	<%= f.text_field :random_string, :placeholder => "alias" %><br>
 	<%= f.submit "create" %>
 <% end %>
