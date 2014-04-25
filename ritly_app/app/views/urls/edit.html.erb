@@ -1,1 +1,12 @@
-<h1>Edit page</h1>
+<h1>Edit Your Ritly</h1>
+
+<%= form_for @url do |f| %>
+  
+  <%= label_tag(:link, "Link:") %>
+  <%= f.text_field :link,  :class => "form-control" %></br>
+
+
+
+  <!-- Submits the @todo object with the inputs to the create method in the TodosController. -->
+  <%= f.submit "Update", :class => "btn btn-danger" %>
+<% end %>

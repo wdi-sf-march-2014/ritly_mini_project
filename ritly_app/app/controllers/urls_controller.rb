@@ -9,19 +9,17 @@ class UrlsController < ApplicationController
 	end
 
 	def create
-     # Creates a url item in the database with the information passed in
-     # the params hash. Redirects to the show page using the todo_path
-     # and passing the @url object.
+     
     
      # binding.pry
-     @url = Url.create url_params
+     @url = Url.create url_params 
+     @url['random_string'] = SecureRandom.base64(8) 
+     @url.save
      redirect_to url_path(@url)
 	end
 
 	def show
-     # Retrieves a specific item from the database. The id of the item is in
-     # the params hash.  Place the item in the @todo instance variable for 
-     # the show.html.erb page.
+     
 
      # binding.pry
      @url = Url.find(params[:id])
@@ -29,13 +27,33 @@ class UrlsController < ApplicationController
     end
 
     def edit
-        
+        @url = Url.find(params[:id])
     end    
+
+    def update
+        @url = Url.find(params[:id])
+        @url.update url_params
+        redirect_to url_path
+    end    
+    
+    def go
+        @redirect = Url.find_by random_string:(params["random_string"])
+        redirect_to @redirect[:link]
+    end    
+
+    def destroy
+        Url.find(params[:id]).destroy
+        redirect_to '/urls'
+    end    
+    
 
     private
     def url_params
-        params.require(:url).permit(:link, :random_string)
-    end    
+        params.require(:url).permit(:link)
+
+    end
+
+
 
 end
 

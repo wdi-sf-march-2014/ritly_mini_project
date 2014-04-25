@@ -1,6 +1,8 @@
 RitlyApp::Application.routes.draw do
   root 'urls#new'
   resources :urls
+    
+  get '/urls/go/:random_string', to: 'urls#go' 
 end
 # Prefix Verb   URI Pattern              Controller#Action
 #     root GET    /                        urls#new

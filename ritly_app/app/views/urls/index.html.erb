@@ -1,8 +1,13 @@
 
-<h1> Index Page:Shows all entries </h1>
+<h1> Show 'Yo Ritly'z </h1>
 
 <% @urls.each do |url| %>
 
-<%= link_to url["link"] %> <%= url["random_string"] %> </br>
+<%= url["link"] %> <a href="/urls/go/<%=url["random_string"]%>"> <%=url["random_string"]%>
+<%= link_to "delete", url, method: :delete, data: { confirm: "You sure?" } , :class => "btn btn-danger btn-xs" %>  </a> </br>
 
 <% end %> 
+
+
+<p></p>
+<a href="/">CREATE ANOTHER RIT</a>
