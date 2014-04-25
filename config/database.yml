@@ -5,7 +5,7 @@
 #   gem 'sqlite3'
 development:
   adapter: postgresql
-  database: todo_development
+  database: ritly_development
   host: localhost
   pool: 5
   timeout: 5000
@@ -15,14 +15,14 @@ development:
 # Do not set this db to the same as development or production.
 test:
   adapter: postgresql
-  database: todo_test
+  database: ritly_test
   host: localhost
   pool: 5
   timeout: 5000
 
 production:
   adapter: postgresql
-  database: todo
+  database: ritly
   pool: 5
   timeout: 5000
 

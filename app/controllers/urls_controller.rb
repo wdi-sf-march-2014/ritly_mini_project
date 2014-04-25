@@ -33,6 +33,11 @@ class UrlsController < ApplicationController
 		redirect_to root_path
 	end
 
+	def go
+		@url = Url.find_by random_string: params[:random_string]
+		redirect_to @url.link
+	end
+
 	private
     # Prepare the params hash for create and update methods.
     def url_params

@@ -3,6 +3,8 @@ RitlyApp::Application.routes.draw do
 
   resources :urls
 
+  get 'urls/go/:random_string' => 'urls#go'
+
 end
 
 

@@ -4,9 +4,8 @@
   
   <%= label_tag(:link, "Link:") %>
   <%= f.text_area :link %>
+  <%= f.hidden_field :random_string, :value => SecureRandom.urlsafe_base64(5)%>
   <%= f.submit "Create Shortened Link" %>
 <% end %></br></br>
 
 <%= link_to "See All Links",urls_path%>
-
-<%# SecureRandom.urlsafe_base64(length_of_string). length_of_string %>
