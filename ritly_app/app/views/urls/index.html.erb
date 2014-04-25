@@ -1,0 +1,13 @@
+<h1> Displays all Entries </h1>
+
+	
+ <!-- #link_to "Url List", new_url_path  -->
+
+<% @urls.each do |url| %>
+    
+      <%= link_to url["link"] %> <a href="/urls/go/<%= url["random_string"]%>"> "<%= url["random_string"]%>"</a></br>
+       <%= link_to "edit", edit_url_path(url[:id]) %>
+     <%= link_to "delete", url, method: :delete, data: { confirm: "You sure?" } %></br>
+     
+<% end %>
+
