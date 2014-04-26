@@ -27,6 +27,8 @@ class UrlsController < ApplicationController
 	end
 
 	def edit
+		#binding.pry
+		@url = Url.find(params[:id])
 	end
 
 	def update

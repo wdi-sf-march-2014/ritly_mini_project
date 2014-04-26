@@ -1,1 +1,17 @@
-<h1> Edit page </h1>
+
+
+<h1>Edit Your Url</h1>
+<%= form_for @url do |f| %>
+
+  <%= label_tag(:link, "Link:") %>
+  <%= f.text_field :link, :class => "random_string" %></br>
+
+  <%= label_tag(:random_string, "random_string") %>
+  <%= f.text_area :random_string, :class => "random_string" %></br>
+
+ 
+  <%= f.submit "Update", :class => "btn btn-warning" %>
+<% end %>
+
+<hr>
+#Url Inspect: <%= @url.inspect %>
