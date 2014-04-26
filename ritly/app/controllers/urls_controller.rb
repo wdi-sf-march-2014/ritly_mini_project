@@ -1,19 +1,23 @@
 class UrlsController < ApplicationController
-	def index
-		@urls = Url.all
-	end
-
 	def new
 		@url = Url.new
 	end
 
 	def create
 		@url = Url.create url_params
-		redirect_to url_path(@url)
+			if @url.save
+				redirect_to url_path(@url)
+			else
+				redirect_to new_url_path
+			end
 	end
 
 	def show
 		@url = Url.find(params[:id])
+	end
+
+	def index
+		@urls = Url.all
 	end
 
 	def edit
@@ -23,6 +27,16 @@ class UrlsController < ApplicationController
 	def update
 		@url = Url.update url_params
 		redirect_to url_path(@url)
+	end
+
+	def destroy
+		Url.find(params[:id]).destroy
+		redirect_to root_path
+	end
+
+	def alias
+		@alias = Url.find_by random_string: params[:alias]
+		redirect_to @alias.link
 	end
 
 private

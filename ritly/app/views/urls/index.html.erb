@@ -2,7 +2,7 @@
 <h1>List Of All URLs</h1>
 
 <% @urls.each do |url| %>
-	<%= url.inspect %><br>
+	<p>http://localhost:3000/g0/<%= url.random_string %> is an alias for <%= url.link %><br>
 <% end %>
 
 <hr>
