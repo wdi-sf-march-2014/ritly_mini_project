@@ -1,14 +1,28 @@
+<div class = "col-xs-3">
 <h1>Create A Rit</h1>
+
 <%= form_for @url do |f| %>
   
   <%= label_tag(:link, "Link:") %>
-  <%= f.text_field :link,  :class => "form-control" %></br>
+  <%= f.text_field :link, :class => "form-control" %></br>
 
-
-
-  <!-- Submits the @todo object with the inputs to the create method in the TodosController. -->
   <%= f.submit "Create", :class => "btn btn-danger" %>
 <% end %>
 
+<p></p>
+<a href="/urls">See All Results</a> </br>
 
-<a href="/urls">See All Results</a>
+<p></p>
+---------------------------------------------------------------------
+<h1>Create Your Own Rit</h1>
+<%= form_for @url do |f| %>
+  
+  <%= label_tag(:link, "Link:") %>
+  <%= f.text_field :link, :class => "form-control" %></br>
+  <%= label_tag(:random_string, "String:") %>
+  <%= f.text_field :random_string, :class => "form-control" %></br>
+
+  <%= f.submit "Create Your Own", :class => "btn btn-danger" %>
+<% end %>
+</div>
+

@@ -4,7 +4,9 @@
 <% @urls.each do |url| %>
 
 <%= url["link"] %> <a href="/urls/go/<%=url["random_string"]%>"> <%=url["random_string"]%>
-<%= link_to "delete", url, method: :delete, data: { confirm: "You sure?" } , :class => "btn btn-danger btn-xs" %>  </a> </br>
+ <%= link_to "delete", url, method: :delete, data: { confirm: "You sure?" } , :class => "btn btn-danger btn-xs" %> <%= link_to "edit", edit_url_path(url[:id]) , :class => "btn btn-primary btn-xs" %>  </a> </br> To visit your site please paste: <li id="paste">localhost:3000/urls/go/<%=url["random_string"]%></li> into your browser </br>
+ </br>
+ <p></p>
 
 <% end %> 
 
