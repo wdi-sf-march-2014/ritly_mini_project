@@ -20,8 +20,6 @@ end
 
 
 
-# Add a route using this syntax. You'll need a route for redirecting to /urls/<random string>
-
 
 # RouteApp::Application.routes.draw do
 #   root to: 'planes#index'     # same as get '/', to: "planes#index" but better bc it defines the 'root'

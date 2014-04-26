@@ -11,3 +11,15 @@
  *= require_self
  *= require_tree .
  */
+
+ table table-striped table-bordered table-condensed {
+ 	width: 647px;
+ 	border: 2px solid black;
+
+ }
+
+ td {
+ 	height: 29px;
+ 	colspan: 3;
+ 	align: center;
+ }

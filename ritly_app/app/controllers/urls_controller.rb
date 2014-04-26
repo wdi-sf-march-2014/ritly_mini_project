@@ -6,9 +6,13 @@ class UrlsController < ApplicationController
 
 	def create
 		@url = Url.create url_params
-		@url['random_string'] = SecureRandom.urlsafe_base64(8)
-		@url.save
-		redirect_to url_path(@url)
+		if @url.id != nil
+			@url['random_string'] = SecureRandom.urlsafe_base64(8)
+			@url.save
+			redirect_to url_path(@url.id)
+		else
+			redirect_to root_path
+		end
 	end
 
 	def show
