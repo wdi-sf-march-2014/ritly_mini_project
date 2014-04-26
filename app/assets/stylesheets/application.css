@@ -8,6 +8,28 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require bootstrap.css
  *= require_self
  *= require_tree .
  */
+
+body {
+	text-align: center;
+  background: url("http://i.imgur.com/m8gI4gp.jpg");
+  background-size: cover;
+  background-position: fixed; 
+  background-repeat: no-repeat;
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+
+h2 {
+	font-size: 36px;
+	font-weight: bold;
+	color: #FFD700;
+}
+
+a {
+	color: black;
+	font-size: 16px;
+
+}

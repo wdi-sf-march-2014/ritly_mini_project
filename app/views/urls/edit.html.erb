@@ -1,16 +1,16 @@
-<h2>Edit Link(edit)</h2>
+<h2>Edit Link</h2>
 
 <%= form_for @url do |f| %>
 	<%= label_tag(:link, "Link") %>
-	<%= f.text_area :link, :class => "form-control" %>
-
-  <%= f.submit "Update", :class => "btn btn-warning" %>
+	<%= f.text_field :link, :class => "form-control" %>
+<button type="button" class="btn btn-warning btn-sm"><%= f.submit "Update" %></button>
+ 
 <% end %></br></br>
 
 
 
 <%= form_for @url do |f|  %>
-	<%=  link_to "Delete", @url, method: :delete, data: { confirm: "You sure?" }  %>
+	<button type="button" class="btn btn-danger btn-sm"><%=  link_to "Delete", @url, method: :delete, data: { confirm: "You sure?" }  %></button>
 <% end %></br></br>
 
-<%= link_to "Back To Home",root_path%>
+<button type="button" class="btn btn-warning btn-sm"><%= link_to "Back To Home",root_path%></button>

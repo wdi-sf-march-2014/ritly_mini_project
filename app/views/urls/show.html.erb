@@ -1,7 +1,8 @@
-<h2>Link Details(show)</h2>
+<h2>Link Details</h2>
 
 <p>Original Link: <%= @url.link %></p>
-<p>Shortened Link: <a href="/urls/go/<%=@url.random_string%>"><%=@url.random_string%></a></p>
+<p>Shortened Link: <button type="button" class="btn btn-default btn-sm"><a href="/urls/go/<%=@url.random_string%>"><%=@url.random_string%></a></p></button></br></br>
 
-<%= link_to "Edit or Delete",edit_url_path %></br></br>
-<%= link_to "Back To Home",root_path%>
+
+<button type="button" class="btn btn-warning btn-sm"><%= link_to "Edit or Delete",edit_url_path %></button></br></br>
+<button type="button" class="btn btn-warning btn-sm"><%= link_to "Back To Home",root_path%></button>

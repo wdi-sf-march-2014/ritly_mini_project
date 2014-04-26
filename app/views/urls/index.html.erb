@@ -1,9 +1,9 @@
-<h2>List of all links(index)</h2>
+<h2>All Links</h2>
 
 <% @urls.each do |url| %>
-	<li><%= link_to url.link, url_path(url.id) %>
-	ritly.<%= url.random_string %>
+	<li><%= link_to url.link, url_path(url.id) %>:
+	<%= url.random_string %>
 	</li>
 <% end %></br></br>
 
-<%= link_to "Back To Home",root_path%>
+<button type="button" class="btn btn-warning btn-sm"><%= link_to "Back To Home",root_path%></button>
