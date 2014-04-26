@@ -1,0 +1,15 @@
+<div class="container">
+<h1>Show Page</h1>
+
+<% link = @rit.random %>
+<p>Your url: <%= @rit.link%> </p>
+<p>Your link: <%= link_to link, go_path(@rit.random) %></p>
+<!-- <p>Code: <%#= @rit.random %></p> -->
+<!-- + @rit.random -->
+
+<%= link_to "Home", rits_path %>
+<br></br>
+<%= link_to "Edit your url", rits_path %>
+<div>
+
+	<img src="http://api.webthumbnail.org?width=1000&height=600&screen=1024&url=<%=@rit.link%>">

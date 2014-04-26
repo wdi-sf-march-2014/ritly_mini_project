@@ -1,0 +1,13 @@
+
+<h1>Generate a new code</h1>
+<div class="container-fluid">
+<%= form_for @rit do |f| %>
+	<%= label_tag(:link, "Link:") %>
+	<%= f.text_field :link%></br>
+	<%= f.submit "Generate random code", :class => "btn btn-info" %>
+
+<% end %>
+<div>
+
+<%#= f.text_field :link, :value => "http://www." %>
+<%#= f.text_field :link, :value => "http://www." %>
