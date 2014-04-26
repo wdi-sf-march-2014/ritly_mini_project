@@ -3,7 +3,7 @@
 <p>Alias generation successful.</p>
 
 <p>Your code is: <%= @url.random_string %><br>
-Go to <%= link_to 'http://localhost:3000/go/', http://localhost:3000/go/ESTxriIGYt0 %> to visit your URL.
+Go to <%= link_to @alias, @url.link %> to visit your URL.
 
 <%= button_to "delete", nil, method: :delete %>
 <%= link_to "back", root_path %>

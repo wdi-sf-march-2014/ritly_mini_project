@@ -14,6 +14,7 @@ class UrlsController < ApplicationController
 
 	def show
 		@url = Url.find(params[:id])
+		@alias = 'http://localhost:3000/go/' + @url.random_string
 	end
 
 	def index
@@ -25,7 +26,8 @@ class UrlsController < ApplicationController
 	end
 
 	def update
-		@url = Url.update url_params
+		@url = Url.find(params[:id])
+		@url.update url_params
 		redirect_to url_path(@url)
 	end
 
