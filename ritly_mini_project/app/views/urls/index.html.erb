@@ -1,0 +1,15 @@
+
+<%= form_for @url do |f| %>
+<%= label_tag(:link, "What link would you like to ritly today?") %>
+<%= f.text_field :link, :class => "form-control input-6-lg" %>
+</br>
+<%= f.submit "Shorten", :class => "btn btn-info"%>
+
+<% end %> <br>
+
+<%= link_to "View all Ritlies", new_url_path, :class => "btn btn-success"%>
+ 
+
+		
+
+
