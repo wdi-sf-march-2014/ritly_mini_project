@@ -1,0 +1,20 @@
+<!-- table of all previously shortened urls -->
+
+<h1>All Yo Ritlies</h1>
+
+<% @urls.each do |url| %>
+
+  <!-- Link to the show method in the controller rails style. -->
+  <%= link_to url["link"], url_path(url[:id]) %>
+
+ 	<%= url['random_string'] %><br>
+
+  <!-- Link to the edit method in the controller -->
+  <%= link_to "edit", edit_url_path(url[:id]) , :class => "btn btn-primary btn-xs" %>
+
+  <!-- Link to the delete method in the controller -->
+  <%= link_to "delete", url, method: :delete, data: { confirm: "You sure?" } , :class => "btn btn-danger btn-xs" %>
+  <br>
+<% end %>
+
+<%= link_to "Make Another", root_path %>

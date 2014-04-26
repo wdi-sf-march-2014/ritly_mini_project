@@ -1,0 +1,17 @@
+<h1>Ritly</h1>
+<h3>Paste a link and we'll shorten it</h3>
+
+<!-- paste field for requested url to shorten, option for custom generated url -->
+
+<%= form_for @url do |f| %>
+  
+  <%= label_tag(:link, "URL to Shorten:") %>
+  <%= f.text_field :link,  :class => "form-control" %></br>
+
+  <!-- add form input for the abiltiy to suggest the text in the shortened url
+
+  <!-- Submits the @url object with the inputs to the create method in the UrlController. -->
+  <%= f.submit "Create", :class => "btn btn-success" %>
+<% end %>
+<br>
+<%= link_to "Show all URLs", urls_path %>
