@@ -1,10 +1,11 @@
+<h2>Change the website your code connects to</h2><br>
 <%= form_for @url do |f| %>
   
-  <%= label_tag(:link, "Link to edit:") %>
-  <%= f.text_field :link,  :class => "form-control" %></br>
+  <%= label_tag(:link, "Your current website url:") %>
+  <%= f.text_field :link,  :class => "form-control" %></br><br>
 
 
 
   <!-- Submits the @todo object with the inputs to the create method in the TodosController. -->
-  <%= f.submit "Submit Edits", :class => "btn btn-danger" %>
+  <%= f.submit "Submit Changes", :class => "buttons" %>
 <% end %>

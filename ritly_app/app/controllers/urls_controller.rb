@@ -2,7 +2,6 @@ class UrlsController < ApplicationController
 
 	def index
 		@urls=Url.all
-
 	end
 	
 	def new
@@ -23,17 +22,14 @@ class UrlsController < ApplicationController
 
 		@url = Url.create params.require(:url).permit(:link, :random_string)
 		
-		
 		if codes.include?(@url.random_string)
 			@url.destroy
 			redirect_to error_path
 		else
-
 		
    		if @url['random_string'] == nil || @url['random_string'] == ''
    		   @url['random_string']=SecureRandom.urlsafe_base64(4)
 	  	   @url.save
-	  	else
 	  	end
 	  	   @url['link'] = "http://"+@url['link']
 	  	   @url.save

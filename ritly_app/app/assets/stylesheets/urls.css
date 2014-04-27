@@ -1,0 +1,71 @@
+body {
+	text-align: center;
+	background-image: url(wood_pattern_@2X.png);
+	font-family: 'Lucida Console', Monaco, monospace;
+}
+
+h1{
+text-shadow:7px 4px 0 rgba(237,237,237,0.7);
+font-weight:bold;
+text-decoration:underline;
+color:#BA0F20;
+letter-spacing:1pt;
+word-spacing:2pt;
+font-size:71px;
+text-align:center;
+font-family:courier new, courier, monospace;
+line-height:1;
+padding-top:30px;
+padding-bottom:0px;
+}
+
+h5 {
+	margin-top:-20px;
+	padding-bottom: 40px;
+}
+
+h2 {
+	padding-top:50px;
+}
+
+#code {
+font-weight:bold;
+color:#E3641B;
+border: 9px groove #FFFFFF;
+letter-spacing:0pt;
+word-spacing:-3pt;
+font-size:47px;
+text-align:center;
+font-family:courier new, courier, monospace;
+line-height:1;
+margin:auto;
+padding:20px;
+width:400px;
+}
+
+
+.buttons{
+	color:white;
+	background-color: black;
+
+}
+
+a:link{
+	color:white;
+}
+a:hover {
+	color:red;
+}
+a:visited{
+	color:gray;
+}
+
+iframe{
+	height: 500px;
+	width: 800px;
+}
+
+#red{
+	color:red;
+	font-style: italic;
+}

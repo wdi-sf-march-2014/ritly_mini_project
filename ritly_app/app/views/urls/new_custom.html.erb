@@ -1,28 +1,21 @@
-<h1>WELCOME TO RITLY</h1>
+<h2>Create a customized link to your favorite site</h2>
 
-<%if @error == true  %>
- <%= "ERROR"%>
- <%else%>
-<%end%>
-<%#binding.pry%>
 
 <%= form_for @url do |f| %>
   
-  <%= label_tag(:link, "Link to add http://") %>
-  <%= f.text_field :link,  :class => "form-control" %></br>
+  <%= label_tag(:link, "http://") %>
+  <%= f.text_field :link,  :class => "form-control" ,:placeholder => "Enter a URL to Shorten"%><br>
 
-  <%= label_tag(:random_string, "Code (5 Char):") %>
-  <%= f.text_field :random_string,  :class => "form-control" %></br>
+  <%= label_tag(:random_string, "Custom Code (min. 5 characters):") %>
+  <%= f.text_field :random_string,  :class => "form-control", :placeholder => "Enter word or number" %></br>
 
 
 
 
   <!-- Submits the @todo object with the inputs to the create method in the TodosController. -->
-  <%= f.submit "Create Custom Link", :class => "btn btn-danger" %>
-<% end %>
+  <%= f.submit "Create Custom Link", :class => "buttons" %>
+<% end %><br>
 
 
 
-
-
-<%= button_to "All Ritlies", {controller: :urls, action: :index}, :method => :get, :class => "btn btn-success" %><br />
+<%= link_to "View the Ritly Links Library (Home)", urls_path %>
