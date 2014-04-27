@@ -1,0 +1,24 @@
+<table class="table table-striped table-bordered col-xs-12">
+	<thead>
+  	<tr>
+      <th><h4>rit.ly id</h4></th>
+      <th><h4>destination url</h4></th>
+      <th><h4>options</h4></th>
+  	</tr>
+  </thead>
+  
+  <tbody>
+		<% @urls.each do |url| %>
+		<tr>
+			<td><%= url.random_string %></td>
+			<td><%= url.link %></td>
+			<td>
+				<%= link_to raw('go <span class="glyphicon glyphicon-share-alt"></span>'), redirect_url_path(url) %> 
+				<%= link_to raw('preview <span class="glyphicon glyphicon-info-sign"></span>'), url_path(url) %> 
+				<%= link_to raw('edit <span class="glyphicon glyphicon-edit"></span>'), edit_url_path(url) %> 
+				<%= link_to raw('delete <span class="glyphicon glyphicon-trash"></span>'), url, confirm: 'are you sure?', method: :delete %>
+			</td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>

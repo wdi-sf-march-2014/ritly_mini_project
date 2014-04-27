@@ -1,0 +1,15 @@
+<span class="col-xs-12 col-lg-3 info">
+<% full_url = "localhost:3000/go/" + @url[:random_string] %>
+<h4><%= link_to full_url, redirect_url_path(@url) %> will now direct you to <%= @url[:link] %></h4>
+
+<%= link_to raw('go <span class="glyphicon glyphicon-share-alt"></span>'), redirect_url_path(@url) %><br>
+<%= link_to raw('edit <span class="glyphicon glyphicon-edit"></span>'), edit_url_path(@url) %><br>
+<%= link_to raw('delete <span class="glyphicon glyphicon-trash"></span>'), @url, confirm: 'are you sure?', method: :delete %><br>
+<br>
+</span>
+
+<span class="col-xs-12 col-lg-9 preview">
+<iframe src="<%= @url[:link] %>">
+	sorry, your destination page could not be displayed.
+</iframe>
+</span>
