@@ -1,9 +1,14 @@
-<h2>All Links</h2>
+<h1>All Links</h1>
+<!--
+def index
+		@urls = Url.all-->
 
+<h4>Click for more details or to edit</h4>
 <% @urls.each do |url| %>
 	<li><%= link_to url.link, url_path(url.id) %>:
-	<%= url.random_string %>
+	/urls/go/<%= url.random_string %>
 	</li>
+
 <% end %></br></br>
 
-<button type="button" class="btn btn-warning btn-sm"><%= link_to "Back To Home",root_path%></button>
+<button type="button" class="btn btn-warning btn-sm"><%= link_to "Shorten a Link",root_path%></button>

@@ -9,13 +9,16 @@ class UrlsController < ApplicationController
 	end
 
 	def create
-		@url = Url.create url_params
-		redirect_to url_path(@url)
+		#if new == "http://www."
+			#redirect_to root_path
+		#else
+			@url = Url.create url_params
+			redirect_to url_path(@url)
+		#end
 	end
 
 	def show
 		@url = Url.find(params[:id])
-		#redirect_to
 	end
 
 	def edit
@@ -33,7 +36,8 @@ class UrlsController < ApplicationController
 		redirect_to root_path
 	end
 
-	def go
+	def go #redirects to alternate url
+		#find 
 		@url = Url.find_by random_string: params[:random_string]
 		redirect_to @url.link
 	end

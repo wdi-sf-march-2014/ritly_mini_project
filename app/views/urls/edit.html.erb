@@ -1,16 +1,18 @@
-<h2>Edit Link</h2>
+<h1>Edit Link</h1>
+<!--
+def edit
+		@url = Url.find(params[:id])
+def update
+		@url = Url.find(params[:id])
+		@url.update url_params
+		redirect_to url_path(@url)-->
 
 <%= form_for @url do |f| %>
 	<%= label_tag(:link, "Link") %>
 	<%= f.text_field :link, :class => "form-control" %>
-<button type="button" class="btn btn-warning btn-sm"><%= f.submit "Update" %></button>
- 
-<% end %></br></br>
+	<input class="btn btn-default" type="submit" value="Update">
+<% end %></br>
+<button type="button" class="btn btn-danger btn-sm"><%= link_to "Delete", @url, method: :delete, data: { confirm: "You sure?" } %></button></br></br>
+<!--
 
 
-
-<%= form_for @url do |f|  %>
-	<button type="button" class="btn btn-danger btn-sm"><%=  link_to "Delete", @url, method: :delete, data: { confirm: "You sure?" }  %></button>
-<% end %></br></br>
-
-<button type="button" class="btn btn-warning btn-sm"><%= link_to "Back To Home",root_path%></button>
