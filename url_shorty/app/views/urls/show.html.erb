@@ -1,0 +1,16 @@
+<h4>ritly for <%= @url[:link] %></h4>
+<br>
+
+<% full_url = "localhost:3000/go/" + @url[:random_string] %>
+
+the ritly <%= link_to full_url, redirect_url_path(@url) %> will direct you towards <%= @url[:link] %>
+
+<br>
+<%= link_to "go there", redirect_url_path(@url) %>
+<%= link_to "edit", edit_url_path(@url) %>
+<%= link_to "delete", @url, method: :delete %>
+
+<br>
+<iframe src="<%= @url[:link] %>" width=90% height="200">
+	Sorry, your destination page could not be displayed.
+</iframe>

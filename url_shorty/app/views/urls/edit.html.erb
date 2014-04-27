@@ -1,0 +1,8 @@
+<h4>update your shortened url</h4>
+<br>
+
+<%= form_for @url do |f| %>
+	<%= f.text_field :link %>
+	<%= f.text_field :random_string %>
+	<%= f.submit "update" %>
+<% end %>

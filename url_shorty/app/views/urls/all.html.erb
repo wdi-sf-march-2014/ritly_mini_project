@@ -1,0 +1,17 @@
+<h4>view all shortened urls</h4>
+<br>
+
+<% @urls.each do |url| %>
+<!-- 	format in a table structure
+	link or string / destination URL / options
+-->
+	<%= url.random_string %>
+	<%= url.link %>
+	<%= link_to "go there", redirect_url_path(url) %>
+	<%= link_to "preview", url_path(url) %>
+	<%= link_to "edit", edit_url_path(url) %>
+	<%= link_to "delete", url, method: :delete %>
+	<br>
+
+
+<% end %>
