@@ -1,10 +1,13 @@
-<%= form_for @url do |f| %>
-<%= label_tag(:link, "Go ahead and make your changes!") %>
-<%= f.text_field :link, :class => "form-control input-6-lg" %>
-</br>
-<%= link_to "update", @url, :class => "btn btn-info" %>
-<%= link_to "delete", @url, method: :delete, data: { confirm: "Are you want to delete?"}, :class => "btn btn-danger" %>
-<p><%= link_to "Create a new Ritly",urls_path, :class => "btn btn-info" %></p> 
-<p><%= link_to "View all Ritlies", new_url_path, :class => "btn btn-info" %></p>
-
-<% end %>
+<div class="row">
+    <div class="col-md-4 col-md-offset-4">
+		<%= form_for @url do |f| %>
+		<h3><%= label_tag(:link, "Go ahead and make your changes!") %></h3>
+		<p><%= f.text_field :link, :class => "form-control input-6-lg" %></p>
+		</br>
+		<p><%= link_to "update", @url, :class => "btn btn-success" %> 
+		   <%= link_to "delete", @url, method: :delete, data: { confirm: "Are you want to delete?"}, :class => "btn btn-danger" %></p>
+		<p><%= link_to "Create a new Ritly",urls_path, :class => "btn btn-info" %>
+		   <%= link_to "View all Ritlies", new_url_path, :class => "btn btn-info" %> </p>
+		<% end %>
+	</div>
+</div>
