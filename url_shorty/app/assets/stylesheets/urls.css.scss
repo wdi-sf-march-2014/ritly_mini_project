@@ -1,3 +1,38 @@
-// Place all the styles related to the urls controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+	text-align: center;
+	font-family: 'Stint Ultra Expanded';
+	color: #383838;
+}
+
+h1 {
+	font-family: 'Special Elite';
+}
+
+.navbar {
+	font-family: 'Special Elite';
+	font-weight: bold;
+}
+
+.table {
+	text-align: left;
+}
+
+.glyphicon {
+	padding-right: 10px;
+	color: #383838;
+}
+
+a {
+	color: #383838;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+iframe {
+	width: 90%;
+	height: 500px;
+	frameborder: 0;
+}

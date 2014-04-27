@@ -52,9 +52,3 @@ private
 	end
 
 end
-
-# Test each route to check for a 200 status (expect(response.status).to be_success or expect(response.status).to eq(200))
-# Add model spec tests
-# incorporate error messages
-# move functions over to model
-# include number of times someone used the link (add count to table)

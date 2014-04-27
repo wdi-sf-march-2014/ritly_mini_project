@@ -1,9 +1,12 @@
-<h4>create a new shortened url</h4>
+<span class="col-xs-12">
+
+<h4>create a new rit.ly link</h4>
 <br>
 
 <%= form_for @url do |f| %>
-	<%= f.url_field :link %>
-	<%= f.text_field :random_string, value: "#{SecureRandom.urlsafe_base64(6)}" %>
-	<%= render 'shared/error_messages' %>
+	<%= f.url_field :link %><br><br>
+	<%= f.text_field :random_string, value: "#{SecureRandom.urlsafe_base64(6)}" %><br>
+	<%= render 'shared/error_messages' %><br>
 	<%= f.submit "create" %>
 <% end %>
+</span>

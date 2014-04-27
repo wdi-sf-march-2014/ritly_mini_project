@@ -1,19 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>ritly</title>
+  <title>rit.ly</title>
+  <link href='http://fonts.googleapis.com/css?family=Special+Elite|Stint+Ultra+Expanded' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
 </head>
 
 <body>
-	<h1>ritly</h1>
-	<!-- ADD A NAV BAR -->
+	<h1>rit.ly</h1>
 
-	<%= yield %>
+	<div class="navbar navbar-default" role="navigation">
+		<div class="container">
+       <ul class="nav navbar-nav">
+         <li><a href="/urls/new">create new</a></li>
+         <li><a href="/urls/all">view all</a></li>
+       </ul>
+		</div>
+	</div>
 
-	<!-- ADD A FOOTER -->
+	<div class="container">
+		<div class="row">
+		
+			<%= yield %>
 
+		</div>
+	</div>
 </body>
 </html>
