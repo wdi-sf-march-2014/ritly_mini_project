@@ -1,9 +1,9 @@
 RitlyApp::Application.routes.draw do
 
-root 'urls#index'
+root 'urls#new'
 
-
-get '/list', to: 'urls#list'
+get '/urls/new_custom', to: 'urls#new_custom', as: :new_custom
+get '/go/:random_string', to: 'urls#go'
 
 resources :urls
 end

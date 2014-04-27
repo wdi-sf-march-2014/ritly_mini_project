@@ -1,11 +1,16 @@
 <h1>Your New Random Link</h1>
-<p>Link: <%= @url['link']%></p>
+<!-- <p>Link: <%= @url['link']%></p> -->
 <p>Random String: <%= @url['random_string']%></p>
+<p>Your new url is <a href=<%=@url.link%>>localhost:3000/go/<%=@url.random_string%></a><br>
 <!-- The following if statement will continue to be -->
 <!-- nil, until we add data to done in the DB. -->
 
- <%= link_to "delete", @url, method: :delete, data: { confirm: "You sure?" } , :class => "btn btn-danger btn-xs" %><br>
+ <%= button_to "Edit", {controller: :urls, action: :edit}, :method => :get, :class => "btn btn-success" %><br />
 
-<%= link_to "Back To Todo List",urls_path%>
+  <%#= button_to "Delete", {controller: :urls, action: :index}, :method => :get, :class => "btn btn-success" %><br />
 
-		
+ <%= button_to "delete", @url, method: :delete, data: { confirm: "You sure?" } , :class => "btn btn-danger btn-xs" %><br>
+
+
+<%= link_to "Back To Ritly List",urls_path%>
+

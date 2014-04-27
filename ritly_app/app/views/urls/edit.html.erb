@@ -1,1 +1,10 @@
-edit.html.erb
+<%= form_for @url do |f| %>
+  
+  <%= label_tag(:link, "Link to edit:") %>
+  <%= f.text_field :link,  :class => "form-control" %></br>
+
+
+
+  <!-- Submits the @todo object with the inputs to the create method in the TodosController. -->
+  <%= f.submit "Submit Edits", :class => "btn btn-danger" %>
+<% end %>

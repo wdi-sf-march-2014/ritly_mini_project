@@ -1,0 +1,19 @@
+<h1>WELCOME TO RITLY</h1>
+
+
+
+<%= form_for @url do |f| %>
+  
+  <%= label_tag(:link, "Link to add http://") %>
+  <%= f.text_field :link,  :class => "form-control" %></br>
+
+
+
+  <!-- Submits the @todo object with the inputs to the create method in the TodosController. -->
+  <%= f.submit "Create Auto-Gen-Link", :class => "btn btn-danger" %>
+<% end %>
+
+<%= button_to "Custom Link", {controller: :urls, action: :new_custom}, :method => :get, :class => "btn btn-success" %><br />
+
+<%= button_to "All Ritlies", {controller: :urls, action: :index}, :method => :get, :class => "btn btn-success" %><br />
+
