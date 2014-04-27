@@ -23,3 +23,15 @@ a:hover{
 div {
 	margin: auto;
 }
+
+.table table-striped table-bordered table-condensed {
+ 	width: 600px;
+ 	border: 2px solid black;
+
+ }
+
+ td {
+ 	height: 29px;
+ 	colspan: 3;
+ 	align: center;
+ }
