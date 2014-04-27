@@ -10,4 +10,111 @@
  *
  *= require_self
  *= require_tree .
+ 
+*=require_bootstrap
+ 
  */
+
+
+
+ .wow {
+  font-family: 'Trade Winds', 'cursive';
+  text-align: center;
+  font-size: 195px;
+  font-weight: 600;
+  margin-top: -9px;
+  margin-bottom: 20px;
+  text-shadow: 10px 0px 0 rgba(255, 215, 16, 1), 3px -16px 0 rgba(11, 143, 53, 0.95);
+  color: rgba(0, 6, 150, 0.79);
+  
+ }
+#box {
+  background-color: rgba(0, 0, 0, 0.5 );
+  width: 600px;
+  min-height: 150px;
+  margin-left: 370px;
+  text-align: center;
+  border-radius: 12px 12px 12px 12px;
+  box-shadow: 3px 10px 10px 10px rgba(255, 246, 21, 0.63);
+  margin-bottom: 150px;
+}
+label {
+  margin-left: 245px;
+  text-align: center;
+}
+input {
+  margin-left: 245px;
+  
+  text-align: center;
+  display:block;
+}
+
+body {
+  background-image: url("http://i.infopls.com/images/ip-hp-color.jpg");
+  margin-bottom: 100px;
+}
+
+a {
+  font-size: 53px;
+  color:white;
+}
+.text {
+  color: #8FF521;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 44px;
+}
+.text2 {
+  color: #8FF521;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 35px;
+}
+.text-show-page {
+  color: #FF08FF;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 60px;
+}
+.text-list {
+  color: #FFAD54;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 35px;
+  }
+
+.text-home {
+  color: #E3FF4D;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 35px;
+  }
+.text-edit {
+  color: #0DFFEC;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 35px;
+  }
+.text-new1 {
+  color: #0DFFEC;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 60px;
+  }
+
+@keyframes bounceInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(2000px);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translateX(-30px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.bounceInRight {
+  animation-name: bounceInRight;
+}

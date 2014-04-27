@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140424235029) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "urls", force: true do |t|
     t.string   "link"
     t.string   "random_string"
