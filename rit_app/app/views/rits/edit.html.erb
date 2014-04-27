@@ -3,11 +3,12 @@
 <hr></hr>
 <%= form_for @rit do |f| %>
 
-  <h2><%= label_tag(:link, "Link:") %></h2>
-  <%= f.text_field :link %></br>
+  <h3><%= label_tag(:link, "Link:") %>
+  <%= f.text_field :link %></h3>
+	  
 
-  <%= f.submit "Update",:class => "btn btn-info" %>
-  <%= link_to "Delete", @rit, method: :delete, data: { confirm: "You sure?" }, :class => "btn btn-danger"%>
-	  <br></br>
+  <%= f.submit "Edit",:class => "btn btn-warning" %>
+  <%#= link_to "Delete", @rit, method: :delete, data: { confirm: "You sure?" }, :class => "btn btn-danger"%>
+
 <% end %>
 <div>

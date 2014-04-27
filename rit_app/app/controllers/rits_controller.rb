@@ -10,6 +10,9 @@ class RitsController < ApplicationController
 
 	def edit
 		@rit = Rit.find(params[:id])
+		# if @rits.id != nil
+		# redirect_to root_path
+		# end
 	end
 
 	def update
@@ -24,21 +27,26 @@ class RitsController < ApplicationController
 
 	def create
 		@rit = Rit.create rit_params
+		if @rit.id != nil
 		@rit.random = SecureRandom.urlsafe_base64(8)
 		@rit.save
-		# if @rit.link == nil
 		redirect_to rit_path(@rit)
+		else
+		redirect_to root_path
+		end	
 	end
 
 	def destroy
 		Rit.find(params[:id]).destroy
-		redirect_to root_path
+		# redirect_to root_path
+		redirect_to :back
 	end
 
+
 	def go
-		
 		@rit = Rit.find_by random: params[:random]
-		redirect_to @rit.link
+		@url = "http://" + @rit.link
+		redirect_to @url
 	end
 
 private

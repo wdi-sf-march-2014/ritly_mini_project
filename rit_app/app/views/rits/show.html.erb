@@ -1,15 +1,20 @@
 <div class="container">
+	<div class="navbar navbar-default"></div>
 <h1>Show Page</h1>
 
 <% link = @rit.random %>
-<p>Your url: <%= @rit.link%> </p>
-<p>Your link: <%= link_to link, go_path(@rit.random) %></p>
+<p>Your URL: <%= @rit.link%> </p>
+<p>New code for URL: <%= link_to link, go_path(@rit.random), :target => "_blank" %></p>
 <!-- <p>Code: <%#= @rit.random %></p> -->
 <!-- + @rit.random -->
 
 <%= link_to "Home", rits_path %>
 <br></br>
-<%= link_to "Edit your url", rits_path %>
-<div>
+<%= link_to "Edit your url", edit_rit_path %>
 
+<!--you've visited this link X times -->
+<br></br>
+
+<%= link_to "Your links history ", new_rit_path %>
+<div>
 	<img src="http://api.webthumbnail.org?width=1000&height=600&screen=1024&url=<%=@rit.link%>">
