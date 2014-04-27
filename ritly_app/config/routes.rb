@@ -3,7 +3,9 @@ RitlyApp::Application.routes.draw do
 root 'urls#new'
 
 get '/urls/new_custom', to: 'urls#new_custom', as: :new_custom
+get '/urs/error', to: 'urls#error', as: :error
 get '/go/:random_string', to: 'urls#go'
+get '/go/:random_string/preview', to: 'urls#preview', as: :preview
 
 resources :urls
 end
@@ -19,3 +21,4 @@ end
 #          PUT    /urls/:id(.:format)      urls#update
 #          DELETE /urls/:id(.:format)      urls#destroy
 
+#NOTE rake db:reset deteles all entries and re-seeds table

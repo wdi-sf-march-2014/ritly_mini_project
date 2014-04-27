@@ -8,7 +8,7 @@ class UrlsController < ApplicationController
 	def new
 		@url = Url.new
 	end
-	
+
 	def new_custom
 		@url= Url.new
 		@error=false
@@ -17,7 +17,6 @@ class UrlsController < ApplicationController
 	def create
 		@urls=Url.all
 		codes=[]
-		@error=false
 		@urls.each do |url| 
 			codes<<url.random_string
 		end
@@ -27,10 +26,8 @@ class UrlsController < ApplicationController
 		
 		if codes.include?(@url.random_string)
 			@url.destroy
-			@error=true
-			redirect_to new_custom_path
+			redirect_to error_path
 		else
-
 
 		
    		if @url['random_string'] == nil || @url['random_string'] == ''
@@ -44,7 +41,6 @@ class UrlsController < ApplicationController
    		end 
    		#end of main if else stmt
 	end
-
 
 	def show
 		@url = Url.find(params[:id])
@@ -65,6 +61,10 @@ class UrlsController < ApplicationController
 		@url = Url.find_by(random_string:params[:random_string])
 		outside_url = @url['link']
 		redirect_to outside_url
+	end
+
+	def preview
+		@url = Url.find_by(random_string:params[:random_string])
 	end
 
 	def destroy

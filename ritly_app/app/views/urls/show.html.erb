@@ -5,12 +5,18 @@
 <!-- The following if statement will continue to be -->
 <!-- nil, until we add data to done in the DB. -->
 
+<!-- <a href= "localhost:3000/go/<%=@url.random_string%>/preview">Preview your Link</a><br> -->
+
+<%= link_to "Preview your Link", preview_path(@url.random_string) %>
+
  <%= button_to "Edit", {controller: :urls, action: :edit}, :method => :get, :class => "btn btn-success" %><br />
 
-  <%#= button_to "Delete", {controller: :urls, action: :index}, :method => :get, :class => "btn btn-success" %><br />
 
- <%= button_to "delete", @url, method: :delete, data: { confirm: "You sure?" } , :class => "btn btn-danger btn-xs" %><br>
+
+ <%= button_to "Delete", @url, method: :delete, data: { confirm: "You sure?" } , :class => "btn btn-danger btn-xs" %><br>
 
 
 <%= link_to "Back To Ritly List",urls_path%>
+
+
 
