@@ -1,17 +1,13 @@
 <h1 class="wow">Ritly</h1>
 
-<div id="box" class="animated @keyframes bounceInRight">
+<div id="box" class="animated @keyframes pulse">
   <h3 class="text-show-page">You have just been <em>RITTLED</em></h3>
    <p class="text2">Look at this beast <%= link_to @url.random_string, go_path(@url.random_string)  %> Its your new URL!!!!</p> 
 <hr>
- 
  <li>
   <p class="text-edit">WHOOPS! Do you need to edit this</p> 
-
-    <p class="text2"> <%= link_to @url.link, go_path(@url.random_string) %></p>
-    
-
-   <%= link_to "SCRUB IT UP", edit_url_path, :class => "btn btn-lg btn-info" %>
+  <p class="text2"> <%= link_to @url.link, go_path(@url.random_string) %></p>
+     <%= link_to "SCRUB IT UP", edit_url_path, :class => "btn btn-lg btn-info" %>
  </li>
 
    <hr>

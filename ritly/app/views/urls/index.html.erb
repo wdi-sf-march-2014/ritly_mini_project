@@ -1,16 +1,14 @@
 <h1 class="wow">Ritly</h1>
-<div id="box" class="animated @keyframes bounceInRight">
-<!-- <p>heklloo</p> -->
-<h3 class="text">Welcome to  <em>Ritly </em>  Please enter a valid URL address..</h3>
-<%= form_for @url do |f| %>
-  <%= f.text_field  :link, placeholder: "E.G. google.com", :class => "form-control" %><br>
-  <%= f.submit "Create", :class =>"btn btn-lg btn-warning" %>
-<% end %>
-<br>
-<%= link_to "THE RITTLED LIST", new_url_path, :class => "btn btn-lg btn-success"  %></li>
-
-
- </div>
+<div id="box" class="animated @keyframes pulse">
+  <h3 class="text">Welcome to <em>Ritly </em> Please enter a valid URL address..</h3>
+  <%= form_for @url do |f| %>
+    <%= f.text_field  :link, placeholder: "E.G. google.com", :class => "form-control" %>
+    <br>
+    <%= f.submit "Create", :class =>"btn btn-lg btn-warning" %>
+  <% end %>
+  <br>
+  <p class="box1"><p1 class="text-edit">Take a look at all other URLS that have been <em>Rittled</em></p1> <br><%= link_to "THE RITTLED LIST", new_url_path, :class => "btn btn-lg btn-success"   %></p><br>
+</div>
 
 
 
