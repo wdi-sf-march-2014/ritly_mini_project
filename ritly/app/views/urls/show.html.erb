@@ -1,12 +1,12 @@
 <h1>URL Details</h1>
 
-<p>Alias generation successful.</p>
+<h2><%= @url.link %> </h2>
 
 <p>Your code is: <%= @url.random_string %><br>
 Go to <%= link_to @alias, @url.link %> to visit your URL.
 
 <%= button_to "delete", nil, method: :delete %>
-<%= link_to "back", root_path %>
+<%= link_to "create new alias", root_path %>
 
 <br>
 <hr>
