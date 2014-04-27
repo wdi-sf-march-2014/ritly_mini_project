@@ -1,17 +1,23 @@
-<h1>Ritly</h1>
-<h3>Paste a link and we'll shorten it</h3>
+<div class="container">
+	<div class="row">	
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 left">
+			<h1 class="new"><img src="http://i.imgur.com/oXi09sz.gif" title="Ritly"/></a></h1>
+			<h3 class="new">Short Link Generator.</h3>
 
-<!-- paste field for requested url to shorten, option for custom generated url -->
+			<div class="form_new">
+				<%= form_for @url do |f| %>
+				  
+				  <%= label_tag(:link, "URL to Shorten:") %>
+				  <%= f.text_field :link,  :class => "form-control" %></br>
 
-<%= form_for @url do |f| %>
-  
-  <%= label_tag(:link, "URL to Shorten:") %>
-  <%= f.text_field :link,  :class => "form-control" %></br>
+				  <!-- add form input for the abiltiy to suggest the text in the shortened url
 
-  <!-- add form input for the abiltiy to suggest the text in the shortened url
-
-  <!-- Submits the @url object with the inputs to the create method in the UrlController. -->
-  <%= f.submit "Create", :class => "btn btn-success" %>
-<% end %>
-<br>
-<%= link_to "Show all URLs", urls_path %>
+				  <!-- Submits the @url object with the inputs to the create method in the UrlController. -->
+				  <%= f.submit "Create", :class => "btn btn-success" %>
+				<% end %>
+				<br>
+				<%= link_to "Show all URLs", urls_path %>
+			</div>
+		</div>
+	</div>
+</div>

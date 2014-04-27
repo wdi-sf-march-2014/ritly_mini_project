@@ -1,12 +1,19 @@
 <!-- form to edit previously submitted link -->
 
-<%= form_for @url do |f| %>
-  
-  <%= label_tag(:link, "URL to Shorten:") %>
-  <%= f.text_field :link,  :class => "form-control" %></br>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 left">
+			<div class="edit">
+				<%= form_for @url do |f| %>
+				  
+				  <%= label_tag(:link, "URL to Shorten:") %>
+				  <%= f.text_field :link,  :class => "form-control" %> 
+				  <!-- add form input for the abiltiy to suggest the text in the shortened url
 
-  <!-- add form input for the abiltiy to suggest the text in the shortened url
-
-  <!-- Submits the @url object with the inputs to the create method in the UrlController. -->
-  <%= f.submit "Update", :class => "btn btn-success" %>
-<% end %>
+				  <!-- Submits the @url object with the inputs to the create method in the UrlController. -->
+				  <%= f.submit "Update", :class => "btn btn-success" %>
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,19 +1,47 @@
-<h1>That was easy. Here's your Ritly:</h1>
+<!--can't get the copy to clipboard feature to work: http://www.steamdev.com/zclip/#usage
 
-<!-- randomly generated string, edit button, show all button, link to preview the page, and a link to the outside world (aka their requested site) -->
+<script type="text/javascript" src="javascripts/jquery.js"></script>
+<script type="text/javascript" src="javascripts/jquery.zclip.js"></script>
 
-<%= link_to @url['random_string'], go_path(@url['random_string']) %>
+<script>
+	$(document).ready(function(){
+		$('div#copy-description').zclip({
+			path:'js/ZeroClipboard.swf',
+			copy:$('p#description').text()
+		}); 
+		<p id="description">www.localhost:3000/urls/<%=@url['random_string']%></p>
+	});
+	<a href="#" id="copy-description">Copy to clipboard</a>
+</script> -->
 
-<h3>Original URL: </h3>
-<%= @url['link'] %>
-<br>
-<br>
+<div class="container">
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-6 left">
+			<h1 class="show">Here's your Ritly code:</h1>
 
-<object type="text/html" data="http://www.hampsterdance.com/" style="width: 450px; height: 500px">
-<p>backup content</p>
-</object>
-<br>
-<%= link_to "Make Another", root_path %>
-<br>
-<%= link_to "View All", urls_path %>
+					<br>
+			<div class="show_body">
+					<%= link_to @url['random_string'], go_path(@url['random_string']) %>
+					<br>
+
+				<h3>Original URL: </h3>
+					<%= @url['link'] %>
+					<br>
+					<br>
+					Preview your link:<br>
+				<div class="preview">
+						<img src="http://api.webthumbnail.org?width=500&height=400&screen=1024&url=<%=@url.link%>">
+				</div>
+					<br>
+				<div class="links">
+						<%= link_to "Make Another", root_path %>
+						<br>
+						<%= link_to "View All", urls_path %>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+ 
+
 
