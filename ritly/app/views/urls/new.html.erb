@@ -1,0 +1,15 @@
+<body class="new">
+<img src="http://i.imgur.com/8qLw0eU.png" title="Hosted by imgur.com"/>
+
+<!-- <h1>Welcome to Ritly!</h1> -->
+<p>Cuz ain't nobody got time for long links...</p>
+<%= form_for @url do |f| %>
+  <%= f.label :link, "Your link here:" %>
+  <%= f.text_field :link %>
+  <%= f.submit "Create Ritly", :class => "btn btn-info"%>
+<% end %>
+
+<br />
+
+<%= button_to "View all Ritlys", results_path, method: "get", :class => "btn btn-success" %>
+</body>
