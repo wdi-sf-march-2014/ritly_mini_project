@@ -9,3 +9,47 @@ img {
 	position: relative;
 }
 
+h1 {
+	font-family: 'Permanent Marker', 'cursive';
+	font-size: 150px;
+	margin-top: .8em;
+	color: black;
+	background: -webkit-linear-gradient(black, #34495e);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+h2 {
+	color: #34495e;
+	background: -webkit-linear-gradient(black, white);
+   -webkit-background-clip: text;
+}
+
+
+
+p {
+	color: black;
+	background: -webkit-linear-gradient(black, #34495e);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	font-size: 30px;
+}
+
+.link {
+	color: black;
+	background: -webkit-linear-gradient(black, #34495e);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	font-size: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.btn-group {
+	color: #000;
+
+}
+
+.td > btn {
+	color: white;
+}

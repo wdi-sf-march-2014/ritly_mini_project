@@ -1,13 +1,15 @@
+<nav class="navbar navbar-fluid" style="background-color: transparent ;" role="navigation">
+    <button type="button" class="btn btn-default navbar-btn"><%= link_to "home", rits_path %></button>
+</nav>
+
 <div class="container">
-<h1>Edit Your URL</h1>
-<hr></hr>
+<h5>edit URL</h5>
 <%= form_for @rit do |f| %>
 
-  <h3><%= label_tag(:link, "Link:") %>
+  <h3>
   <%= f.text_field :link %></h3>
 	  
-
-  <%= f.submit "Edit",:class => "btn btn-warning" %>
+  <%= f.submit "edit",:class => "btn btn-default" %>
   <%#= link_to "Delete", @rit, method: :delete, data: { confirm: "You sure?" }, :class => "btn btn-danger"%>
 
 <% end %>

@@ -1,14 +1,15 @@
 
-<h1>Ritly</h1>
+<h1>ritly</h1>
 <div class="container-fluid">
 <%= form_for @rit do |f| %>
-	<h4><%= label_tag(:link, "Enter or Paste URL:") %>
-	<%= f.text_field :link%></h4></br>
-	<%= f.submit "Generate random code", :class => "btn btn-info" %>
+	<h3>
+	<%= f.text_field :link, placeholder: "\s\s\s\senter or paste URL"%></h3></br>
+	<%= f.submit "Generate random code", :class => "btn btn-default" %>
 
 <% end %>
+<body class="background">
 
-
+</body>
 <div>
 
 <%#= f.text_field :link, :value => "http://www." %>

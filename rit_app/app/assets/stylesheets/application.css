@@ -25,8 +25,32 @@
 
 body {
 	text-align: center;
+	/*background: url("http://i.imgur.com/1el6iv1.png");*/
+	background-color: #bdc3c7;
 }
 
 .btn {
 	text-align: center;
+	font-weight: bold;
+	color: #2980b9;
+	
+
 }
+
+h3 {  
+    
+   
+  	text-align: center;
+}  
+  
+h5 {
+	font-family: 'Permanent Marker', 'cursive';
+	font-size: 100px;
+	margin-top: 1em;
+	color: black;
+	background: -webkit-linear-gradient(black, #34495e);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+
+
+

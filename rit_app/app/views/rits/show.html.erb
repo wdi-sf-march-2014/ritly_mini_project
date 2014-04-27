@@ -1,20 +1,15 @@
 <div class="container">
-	<div class="navbar navbar-default"></div>
-<h1>Show Page</h1>
+	
+	<h1>ritly</h1>
 
-<% link = @rit.random %>
-<p>Your URL: <%= @rit.link%> </p>
-<p>New code for URL: <%= link_to link, go_path(@rit.random), :target => "_blank" %></p>
-<!-- <p>Code: <%#= @rit.random %></p> -->
-<!-- + @rit.random -->
-
-<%= link_to "Home", rits_path %>
+	<% link = @rit.random %>
+	<p>Your URL: <%= @rit.link%> </p>
+	<a class="link">Shortened link: <%= link_to link, go_path(@rit.random), :target => "_blank", :class => "btn btn-default" %></a>
 <br></br>
-<%= link_to "Edit your url", edit_rit_path %>
-
-<!--you've visited this link X times -->
+<div class="btn-group">
+  <button type="button" class="btn btn-default"><%= link_to "home", rits_path %></button>
+  <button type="button" class="btn btn-default"><%=link_to "edit URL", edit_rit_path%></button>
+  <button type="button" class="btn btn-default"><%= link_to "history ", new_rit_path %></button>
+</div>
 <br></br>
-
-<%= link_to "Your links history ", new_rit_path %>
-<div>
-	<img src="http://api.webthumbnail.org?width=1000&height=600&screen=1024&url=<%=@rit.link%>">
+	<img src="http://api.webthumbnail.org?width=750&height=400&screen=1024&url=<%=@rit.link%>">

@@ -1,6 +1,7 @@
 <!-- http://stackoverflow.com/questions/15115052/twitter-bootstrap-how-to-set-up-width-of-td -->
-
-
+<nav class="navbar navbar-fluid" style="background-color: transparent ;" role="navigation">
+    <button type="button" class="btn btn-default navbar-btn"><%= link_to "home", rits_path %></button>
+</nav>
 <div class="container">
 	<table class="table table-striped table-bordered table-condensed table-hover">
 	
@@ -23,7 +24,7 @@
     <td><%= rit.created_at  %></td> <!-- created at -->
     <td><%= rit.updated_at  %></td> <!-- updated at -->
     <td>
-          <%= link_to 'Delete', rit_path(rit), :method => :delete, data: { :confirm => 'Are you sure?'}, :class => 'btn btn-danger btn-sm' %>
+          <%= link_to 'Delete', rit_path(rit), :method => :delete, data: { :confirm => 'Are you sure?'}, :class => 'btn-danger btn-sm' %>
         </td>
        
     

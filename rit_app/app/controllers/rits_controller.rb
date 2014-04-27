@@ -5,7 +5,7 @@ class RitsController < ApplicationController
 	end
 
 	def show
-		@rit = Rit.find(params[:id])#should this link?
+		@rit = Rit.find(params[:id])
 	end
 
 	def edit
@@ -46,7 +46,11 @@ class RitsController < ApplicationController
 	def go
 		@rit = Rit.find_by random: params[:random]
 		@url = "http://" + @rit.link
-		redirect_to @url
+		if @rit.link.start_with?("http://") || @rit.link.start_with?("https://")
+			redirect_to @rit.link
+		else
+			redirect_to @url
+		end
 	end
 
 private
