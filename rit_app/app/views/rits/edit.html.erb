@@ -1,16 +1,20 @@
-<nav class="navbar navbar-fluid" style="background-color: transparent ;" role="navigation">
-    <button type="button" class="btn btn-default navbar-btn"><%= link_to "home", rits_path %></button>
-</nav>
-
+<br></br>
 <div class="container">
-<h5>edit URL</h5>
-<%= form_for @rit do |f| %>
+	<a class="home" href="/">Home</a>
+            
+    <!-- <div class="row"><%#= link_to "home", rits_path %></div> -->
 
-  <h3>
-  <%= f.text_field :link %></h3>
+<br></br>
+
+
+	<h5>Edit URL</h5>
+	<%= form_for @rit do |f| %>
+
+  	<h3>
+  	<%= f.text_field :link %></h3>
 	  
-  <%= f.submit "edit",:class => "btn btn-default" %>
+  	<%= f.submit "continue",:class => "btn btn-default" %>
   <%#= link_to "Delete", @rit, method: :delete, data: { confirm: "You sure?" }, :class => "btn btn-danger"%>
 
-<% end %>
+	<% end %>
 <div>

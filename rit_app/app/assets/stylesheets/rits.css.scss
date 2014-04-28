@@ -9,6 +9,31 @@ img {
 	position: relative;
 }
 
+ul {
+	color: white;
+	display: inline;
+	font-style: italic;
+	font-size: 19px;
+}
+
+.table {
+	background: #34495e;
+	color: white;
+	}
+
+
+.home {
+	color: #34495e;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Permanent Marker', 'cursive';
+	background: -webkit-linear-gradient(black, #34495e);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+
+
 h1 {
 	font-family: 'Permanent Marker', 'cursive';
 	font-size: 150px;
@@ -33,6 +58,7 @@ p {
   	-webkit-background-clip: text;
   	-webkit-text-fill-color: transparent;
 	font-size: 30px;
+
 }
 
 .link {
@@ -50,6 +76,7 @@ p {
 
 }
 
-.td > btn {
-	color: white;
+td{
+	color: black;
+	font-weight: bold;
 }
