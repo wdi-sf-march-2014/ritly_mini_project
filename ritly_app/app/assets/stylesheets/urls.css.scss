@@ -10,9 +10,6 @@ a {
 	font-size: 20px;
 }
 
-a:hover{
-	font-size: 23px;
-}
 
 #paste {
 	list-style-type: none;
@@ -20,18 +17,14 @@ a:hover{
 	color: #2C3E50;
 }
 
-div {
-	margin: auto;
+th {
+	text-align: center;
 }
 
-.table table-striped table-bordered table-condensed {
- 	width: 600px;
- 	border: 2px solid black;
+table {
+	background-color: #BFBFBF;
+}
 
- }
-
- td {
- 	height: 29px;
- 	colspan: 3;
- 	align: center;
- }
+thead {
+	background-color: #95A5A6;
+}
