@@ -3,5 +3,7 @@ Ritly::Application.routes.draw do
 
  get '/go/:alias', to: 'urls#alias'
 
+ get '/go/:alias/preview', to: 'urls#preview'
+
  resources :urls
 end

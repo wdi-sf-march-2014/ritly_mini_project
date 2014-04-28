@@ -41,6 +41,11 @@ class UrlsController < ApplicationController
 		redirect_to @alias.link
 	end
 
+	def preview
+		@url = Url.find_by random_string: params[:alias]
+		@preview = 'http://api.webthumbnail.org?width=400&height=300&screen=1280&format=png&url=' + @url.link
+	end
+
 private
 	def url_params
 		params.require(:url).permit(:link, :random_string)
