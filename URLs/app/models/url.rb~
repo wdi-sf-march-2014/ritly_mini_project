@@ -1,4 +1,4 @@
 class Url < ActiveRecord::Base
     validates :link, presence: true 
-    
+    rand
 end

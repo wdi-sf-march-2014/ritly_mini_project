@@ -1,0 +1,13 @@
+</br>
+<h2> The NEW Page </h2>
+</br>
+<%= form_for @url do |f| %>
+
+  <%= label_tag(:link, "ENTER YOUR URL")%>
+  
+  <%= f.text_field :link %>
+  
+  <%= f.submit "Shorten" %>
+  
+<% end %>
+

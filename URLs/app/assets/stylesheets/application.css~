@@ -20,8 +20,8 @@ body {
          text-align:center;
         }
 h1 {
-   font-family:Beautiful Every Time;
-      }
+   font-family:"Time Script™",Georgia,Serif;
+   }
  li {
       font-color:white;
      }

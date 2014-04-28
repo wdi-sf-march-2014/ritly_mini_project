@@ -1,11 +1,10 @@
-<h1> rilty </h1>
-
-<%= form_tag @urls do |f| %>
-
-  <%= label_tag(:link, "link:") %>
-  <%= f.text_field :title %></br>
-  
-   <%= f.submit "Shorten", :class =>"btn btn-success" %>
-<% end %>
+<h1> Welcome to Rilty website </h1>
 
 
+<% @url.each do |url| %>
+<table class="table table-hover">
+<li><%=url["link"]%> <%=link_to"Delete", url, method: :delete, data: {confirm: "Are you sure?"}, :class => "btn btn-danger btn-xs"%></li>
+
+<%end%></br>
+</table>
+<%= link_to "Create a new_url", new_url_path, :class => "btn btn-success"%>

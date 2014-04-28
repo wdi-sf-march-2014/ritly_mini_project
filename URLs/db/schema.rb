@@ -13,11 +13,12 @@
 
 ActiveRecord::Schema.define(version: 20140425042027) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "urls", force: true do |t|
     t.string   "link"
-    t.string   "Hyperlink"
     t.string   "random_string"
-    t.string   "text"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

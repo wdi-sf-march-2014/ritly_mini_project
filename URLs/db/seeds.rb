@@ -5,8 +5,17 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-urls = URL.create ([
-                     {link: "http://www.generalassemb.ly", random_string: "m1gpLHq8aoY"},
-                     {link: "http://www.google.com", random_string: "T7DViXiIxFE"},
-                     {link: "http://www.yahoo.com", random_string: "pxMpvdB8LRw"}
-                     ])
+urls = Url.create([
+  {link: "Google.com", random_string: "1bdDlXc"},
+
+  {link: "http://bathsheba.com/bio/zoatron/", random_string: "1nL2jBM"},
+
+  {link: "http://sfpl.org/", random_string: "1ijEhbH"},
+
+  {link: "http://www.n-e-r-v-o-u-s.com/", random_string: "1ijdAKd"},
+
+  {link: "http://www.pbs.org/wgbh/mystery/american/navajoland/hillerman_...", random_string: "1htInOh"},
+
+  {link: "https://github.com/wdi-sf-march-2014/rails_todo_app/tree/with_rspec", random_string: "1jYpZQu"}
+
+   ])
