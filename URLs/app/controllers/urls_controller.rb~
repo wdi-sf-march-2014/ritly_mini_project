@@ -23,13 +23,14 @@ class UrlsController < ApplicationController
         @url.save
         redirect_to url_path(@url)
       else
+         
          redirect_to new_url_path
       end
    end
    def redirection
    # binding.pry
         @url = Url.find_by_random_string(params[:random_string])
-         redirect_to @url.link
+         redirect_to "http://"+ @url.link
    end
    def destroy
       Url.find(params[:id]).destroy

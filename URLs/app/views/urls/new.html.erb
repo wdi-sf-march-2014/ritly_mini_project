@@ -3,9 +3,9 @@
 </br>
 <%= form_for @url do |f| %>
 
-  <%= label_tag(:link, "ENTER YOUR URL")%>
+  <%= label_tag(:link, "ENTER YOUR URL:")%>
   
-  <%= f.text_field :link %>
+  <%= f.text_field :link, :autofocus => true, :required => true %>
   
   <%= f.submit "Shorten" %>
   

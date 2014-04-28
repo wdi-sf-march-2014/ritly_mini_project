@@ -30,7 +30,7 @@ class UrlsController < ApplicationController
    def redirection
    # binding.pry
         @url = Url.find_by_random_string(params[:random_string])
-         redirect_to @url.link
+         redirect_to "http://"+ @url.link
    end
    def destroy
       Url.find(params[:id]).destroy
