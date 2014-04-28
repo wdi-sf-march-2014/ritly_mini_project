@@ -13,7 +13,6 @@ class UrlsController < ApplicationController
   end
 
   def create
-    #generate secure hash
     #get params from submission
     url_params = params.require(:url).permit(:link)
     #set an extra key and value to save for the url
@@ -25,12 +24,12 @@ class UrlsController < ApplicationController
       end
     #save params
     @url = Url.create(url_params)
-    if @url
-      redirect_to url_path(@url.id)
-    else
-      flash[:error] = "You're a bozo. Either enter a real link, or the link you chose has already been taken!!"
-      redirect_to root_path
-    end
+      if @url[:id] != nil
+        redirect_to url_path(@url.id)
+      else
+        flash[:error] = "Error! Either the URL you entered is invalid or the custom link you chose has already been taken."
+        redirect_to root_path
+      end
   end
 
   def edit

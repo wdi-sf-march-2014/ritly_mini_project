@@ -12,3 +12,85 @@
  *= require_self
  *= require_tree .
  */
+body {
+  background-color: black;
+  color: white;
+}
+
+form {
+  color: white;
+}
+
+h1 {
+  font-family: 'Lobster', 'cursive';
+  color: white;
+  text-align: center;
+  font-size: 80px;
+  padding-top: 1em;
+}
+h2 {
+  text-align: center;
+  font-size: 40px;
+}
+h3 {
+  text-align: center;
+}
+p {
+  text-align: center;
+  font-size: 20px;
+}
+f.submit {
+  color: white;
+}
+.form1 {
+  text-align: center;
+  color: black;
+  padding-top: 1em;
+}
+.form1 input {
+  color: black;
+}
+.form2 {
+  text-align: center;
+  padding-top: 2em;
+  color: black;
+}
+.form2 input {
+  color: black;
+}
+
+.button {
+  color: black;
+}
+.show {
+  font-size: 50px;
+  padding-top: 2em;
+}
+a {
+  text-decoration: none;
+}
+#goto {
+  color: red;
+}
+.random_string_form {
+  padding: 0 40px 0 0;
+}
+
+.random_string_form input {
+  color: black;
+}
+
+#button1 {
+  color: black;
+  padding-top: 10px;
+}
+
+.move {
+  padding: 20px 0 0 20em; 
+  color: black;
+}
+.error {
+  color: red;
+}
+
+

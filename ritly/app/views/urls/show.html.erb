@@ -1,24 +1,22 @@
-<h1> Your random generated link is:</h1>
+<div class="container">
+  <h1 class="show"> Your random generated link is:</h1>
+  <h2> <%= @url.random_string %> </small></h2><br>
+    <p>Links you to:  <em><%= @url.link %></em> </p>
+    <p>Put <b>localhost:3000/go/<%= @url.random_string %></b> in the browser to go to your site</p>
 
-<h2> <%= @url.random_string %> </h2>
+    <div class ="move">
+    <%= link_to "Oops! Wrong URL", edit_url_path(@url.id), :class => "btn btn-default btn-xs" %>
 
-<p>Links you to:  <em><%= @url.link %></em> </p>
+    <% if @url.link.start_with?('http://') == true || @url.link.start_with?('https://') == true %>
+      <%= link_to "Go to your webpage", (@url.link), :class => "btn btn-default btn-xs" %> 
+    <% else %>
 
-<p>Put localhost:3000/go/<%= @url.random_string %> in the browser to go to your site</p>
-
-<%= link_to "Oops wrong url", edit_url_path(@url.id) %>
-
-<a href= '/'>Here is a preview</a>
-
-<% if @url.link.start_with?('http://') == true || @url.link.start_with?('https://') == true %>
+    <button class="btn-default btn-xs" id="goto"><a href= "http:///<%=@url.link%>">Go to your webpage</a></button>
   
-  <%= link_to "Your site", (@url.link) %> 
-
-<% else %>
+    <% end %>
+    <%= link_to "Main Page", new_url_path, :class => "btn btn-default btn-xs" %>
     
-    <a href= "http:///<%=@url.link%>">Go to your site</a>
-
-<% end %>
-
-<%= link_to "Main Page", new_url_path %>
+    <%= link_to "All Ritlys", urls_path, :class => "btn btn-default btn-xs" %>
+  </div>
+</div>
 
