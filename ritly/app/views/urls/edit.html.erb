@@ -1,0 +1,16 @@
+<h1 class="wow">Ritly</h1>
+
+<div class="animated @keyframes pulse" id="box">
+<h3 class="text"> Its time to edit the <em> Ritly</em>.. </h3>
+  <%= form_for @url do |f| %>
+  <%= f.text_field :link, :class => "form-control" %><br>
+  <%= f.submit "RE-RITTLE", :class =>"btn btn-lg btn-warning" %>
+<% end %><br>
+
+<hr>
+  
+ <p class="box1"><p1 class="text-edit"> Back home..</p1><br> <%= link_to "HOME PAGE",  root_path, :class => "btn btn-lg btn-info"   %></p><br><br>
+
+ <p class="box1"><p1 class="text-edit">Take a look at all other URLS that have been <em>Rittled</em></p1> <br><%= link_to "THE RITTLED LIST", new_url_path, :class => "btn btn-lg btn-success"   %></p>
+</div>
+

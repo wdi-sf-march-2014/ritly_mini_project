@@ -1,0 +1,21 @@
+<h1 class="wow">Ritly</h1>
+
+<div id="box" class="animated @keyframes pulse">
+
+  <% @urls.each do |il| %>
+
+<div class="box"> <%= link_to il.link, url_path(il), :class =>"text-new1"  %>
+  
+ <%= link_to @url.random_string, go_path(il.random_string),:class => "text-new1" %> <br>
+    <p class="text2"> Born on: <%=il.created_at %> </p><br>
+    <p class="text-list"> Updated at: <%=il.updated_at %></p><br>
+  <br><br>
+ <%= link_to "SCRUB IT UP", edit_url_path(il[:id]), :class => "btn btn-lg btn-info"  %><br><br>
+ 
+  <%= link_to "ELIMINATE", il, method: :delete,:class => "btn btn-lg btn-danger", data:{confirm: "Are you sure it's time to ELIMINATE.." }  %>
+   <br> </div>
+<%end  %>
+<br>
+ <%= link_to "GO HOME", root_path, :class => "btn btn-lg btn-success"   %>
+
+ </div>

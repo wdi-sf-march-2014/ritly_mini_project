@@ -1,0 +1,142 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ 
+*=require_bootstrap
+ 
+ */
+
+
+
+ .wow {
+  font-family: 'Trade Winds', 'cursive';
+  margin-left: 426px;
+  font-size: 195px;
+  font-weight: 600;
+  margin-top: -9px;
+  margin-bottom: 20px;
+  text-shadow: 10px 0px 0 rgba(255, 215, 16, 1), 3px -16px 0 rgba(11, 143, 53, 0.95);
+  color: rgba(0, 6, 150, 0.79);
+  
+ }
+#box {
+  background-color: rgba(0, 0, 0, 0.5 );
+  width: 600px;
+  padding-top: 24px;
+  min-height: 150px;
+  margin-left: 370px;
+  text-align: center;
+  border-radius: 12px 12px 12px 12px;
+  box-shadow: 3px 10px 10px 10px rgba(255, 246, 21, 0.63);
+  margin-bottom: 150px;
+  padding-bottom: 50px;
+}
+.box {
+  background-color: rgba(67, 118, 195, 0.48);
+width: 331px;
+min-height: 116px;
+margin-left: 134px;
+text-align: center;
+border-radius: 12px 12px 12px 12px;
+box-shadow: 3px 10px 10px 10px rgba(255, 21, 21, 0);
+margin-bottom: 12px;
+
+  }
+  .box1 {
+  background-color: rgba(240, 199, 36, 0.48);
+width: 421px;
+min-height: 149px;
+margin-left: 97px;
+text-align: center;
+border-radius: 12px 12px 12px 12px;
+box-shadow: 3px 10px 10px 10px rgba(255, 21, 21, 0);
+margin-bottom: -22px;
+  }
+}
+label {
+  margin-left: 245px;
+  text-align: center;
+}
+input {
+  margin-left: 245px;
+  
+  text-align: center;
+  display:block;
+}
+
+body {
+  background-image: url("http://i.infopls.com/images/ip-hp-color.jpg");
+  margin-bottom: 100px;
+}
+
+a {
+  font-size: 53px;
+  color:white;
+}
+.text {
+  color: #8FF521;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 44px;
+}
+.text2 {
+  color: #8FF521;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 35px;
+}
+.text-show-page {
+  color: #FF08FF;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 60px;
+}
+.text-list {
+  color: #FFAD54;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 35px;
+  }
+
+.text-home {
+  color: #E3FF4D;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 35px;
+  }
+.text-edit {
+  color: #0DFFEC;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 35px;
+  }
+.text-new1 {
+  color: #0DFFEC;
+  font-family: 'Amatic SC', 'cursive';
+  font-size: 60px;
+  }
+
+  .btn_btn-lg_btn-danger {
+  padding-bottom: 10px;
+  }
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation-name: pulse;
+}
