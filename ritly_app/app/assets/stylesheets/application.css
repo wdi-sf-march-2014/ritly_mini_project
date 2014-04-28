@@ -19,6 +19,9 @@ input {background-color: #0695DC;
 h1 {text-align: center;
     color: #0695DC;}
 
+div {padding-left: 245px;
+}
+
 label {color: #811DC0;
       font-size: 69px;
       }
@@ -29,4 +32,4 @@ form {padding-left: 232px;
 
 body {background-color: #D8E455;}
 
-a {color: #0695DC;}
+a {color: #C61835;}
