@@ -13,11 +13,13 @@
 	  	<tr>
 	  	  <td><%=@url.id%></td>
 	  	  <td><%=@url['link']%></td>
-	  	  <td><%=@url['random_string']%></td>
-	  	  <td>Please Paste localhost:3000/urls/go/<%=@url.id%> into your browser.</td>	
+	  	  <td><a href="/urls/go/<%=@url['random_string']%>"><%=@url['random_string']%></a></td>
+	  	  <td>Please Paste localhost:3000/urls/go/<%=@url['random_string']%> into your browser.</td>	
 	  	</tr>
 	  </tbody>
 </table>	
 
+<iframe width="450" height="500" src="/urls/go/<%=@url['random_string']%>"></iframe></br>
+
 <%= link_to "Create Another Rit", new_url_path %></br>
-<%= link_to "View All Rits", urls_path %>
+<%= link_to "View All Rits", urls_path %></br>
