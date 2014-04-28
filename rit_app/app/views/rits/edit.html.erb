@@ -1,0 +1,20 @@
+<br></br>
+<div class="container">
+	<a class="home" href="/">Home</a>
+            
+    <!-- <div class="row"><%#= link_to "home", rits_path %></div> -->
+
+<br></br>
+
+
+	<h5>Edit URL</h5>
+	<%= form_for @rit do |f| %>
+
+  	<h3>
+  	<%= f.text_field :link %></h3>
+	  
+  	<%= f.submit "continue",:class => "btn btn-default" %>
+  <%#= link_to "Delete", @rit, method: :delete, data: { confirm: "You sure?" }, :class => "btn btn-danger"%>
+
+	<% end %>
+<div>

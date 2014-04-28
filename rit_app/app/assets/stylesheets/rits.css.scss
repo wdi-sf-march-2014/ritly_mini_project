@@ -1,0 +1,82 @@
+// Place all the styles related to the rits controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+img {
+	margin-left: 30px;
+	padding: 5%;
+	border-radius: 5%;
+	position: relative;
+}
+
+ul {
+	color: white;
+	display: inline;
+	font-style: italic;
+	font-size: 19px;
+}
+
+.table {
+	background: #34495e;
+	color: white;
+	}
+
+
+.home {
+	color: #34495e;
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Permanent Marker', 'cursive';
+	background: -webkit-linear-gradient(black, #34495e);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+
+
+h1 {
+	font-family: 'Permanent Marker', 'cursive';
+	font-size: 150px;
+	margin-top: .8em;
+	color: black;
+	background: -webkit-linear-gradient(black, #34495e);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+h2 {
+	color: #34495e;
+	background: -webkit-linear-gradient(black, white);
+   -webkit-background-clip: text;
+}
+
+
+
+p {
+	color: black;
+	background: -webkit-linear-gradient(black, #34495e);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	font-size: 30px;
+
+}
+
+.link {
+	color: black;
+	background: -webkit-linear-gradient(black, #34495e);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	font-size: 25px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.btn-group {
+	color: #000;
+
+}
+
+td{
+	color: black;
+	font-weight: bold;
+}

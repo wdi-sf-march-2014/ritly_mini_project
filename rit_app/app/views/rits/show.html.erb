@@ -1,0 +1,15 @@
+<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	<br></br>
+	
+		<a class="home" href="/">Home</a>
+</div>
+	<h1>Ritly</h1>
+
+	<% link = @rit.random %>
+	<p>URL: <%= @rit.link%> </p>
+	<a class="link">Shortened URL: <%= link_to link, go_path(@rit.random), :target => "_blank", :class => "btn btn-default" %></a>
+<br></br>
+	<ul><a href=><%=link_to "Edit URL", edit_rit_path%></a></ul>
+	<ul><a href=><%=link_to "URL History", new_rit_path%></a></ul>
+<br></br>
+	<img src="http://api.webthumbnail.org?width=750&height=400&screen=1024&url=<%=@rit.link%>">

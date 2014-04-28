@@ -1,0 +1,40 @@
+<!-- http://stackoverflow.com/questions/15115052/twitter-bootstrap-how-to-set-up-width-of-td -->
+<div class="container-fluid">
+<br></br>
+    
+<a class="home" href="/">Home</a>
+            
+    <!-- <div class="row"><%#= link_to "home", rits_path %></div> -->
+
+<br></br>
+	<table class="table table-bordered table-condensed table-hover">
+	
+    <thead>
+    <tr>
+    <th>id</th>
+    <th>Link</th>
+    <th>Random String</th>
+    <th>Created at</th>
+    <th>Upated at</th>
+    <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+	<% @rits.each do |rit| %>
+    <td><%= rit.id %></td>
+    <td><%= rit.link  %></td> <!-- link -->
+    <td><%= rit.random  %></td> <!--random string -->
+    <td><%= rit.created_at  %></td> <!-- created at -->
+    <td><%= rit.updated_at  %></td> <!-- updated at -->
+    <td>
+          <%= link_to 'Delete', rit_path(rit), :method => :delete, data: { :confirm => 'Are you sure?'}, :class => 'btn-danger btn-sm' %>
+        </td>
+       
+    
+    </tr>
+    </tbody>
+    <% end %>
+	</table>
+
+</div>
