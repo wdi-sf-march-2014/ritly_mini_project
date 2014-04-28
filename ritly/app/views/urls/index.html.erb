@@ -1,0 +1,19 @@
+<!-- list of all urls -->
+<h1>List Of All URLs</h1>
+<table>
+	<tr>
+		<th>Alias</th>
+		<th>URL</th>
+	<% @urls.each do |url| %>
+		<% @preview_link = 'http://localhost:3000/go/' + url.random_string %>
+		<tr>
+			<td><%= link_to @preview_link, @preview_link + '/preview' %></td>
+			<td><%= url.link %></td>
+			<td><%= button_to 'edit', '/urls/' + url.id.to_s + '/edit', method: :get %></td?
+		</tr>
+	<% end %>
+</table>
+
+
+<hr>
+<%= @urls.inspect %>

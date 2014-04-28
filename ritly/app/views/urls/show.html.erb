@@ -1,0 +1,14 @@
+<h1>URL Details</h1>
+
+<h2><%= @url.link %> </h2>
+
+Your code is: <%= @url.random_string %>
+Go to <%= link_to @alias, @url.link %> to visit your URL.
+<%= button_to 'preview', '/go/' + @url.random_string.to_s + '/preview', method: :get %>
+<%= button_to "delete", nil, method: :delete %>
+<%= button_to 'edit', @url.id.to_s + '/edit', method: :get %>
+<%= link_to "create new alias", root_path %>
+
+<br>
+<hr>
+<%= @url.inspect %>

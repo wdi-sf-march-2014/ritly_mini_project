@@ -1,0 +1,13 @@
+<!-- form to create new url -->
+<h1>Create New URL Alias</h1>
+
+<%= form_for @url do |f| %>
+	<%= f.text_field :link, {:value => "http://", :size => "50"} %><br>
+	<%= f.text_field :random_string, :value => SecureRandom.urlsafe_base64(8), :size => 15 %><br>
+	<%= f.submit "create" %>
+<% end %>
+
+<%= button_to "view all aliases", urls_path, method: :get %>
+<hr>
+<%= @url.inspect %>
+
