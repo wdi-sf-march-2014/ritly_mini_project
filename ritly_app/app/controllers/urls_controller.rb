@@ -5,8 +5,8 @@ class UrlsController < ApplicationController
     end	
 
 	def new
-	  @url = Url.new
-	end
+      @url = Url.new
+    end
 
 	def create
       @url = Url.create url_params 
