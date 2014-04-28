@@ -1,0 +1,28 @@
+<div class = "col-md-4">
+<h1>Create A Rit</h1>
+
+<%= form_for @url do |f| %>
+  
+  <%= label_tag(:link, "Link:") %>
+  <%= f.text_field :link, :class => "form-control" %></br>
+
+  <%= f.submit "Create", :class => "btn btn-danger" %>
+<% end %>
+
+<p></p>
+<%= link_to "See All Rit'zzz", urls_path %>
+
+<p></p>
+---------------------------------------------------------------------
+<h1>Create Your Own Rit</h1>
+<%= form_for @url do |f| %>
+  
+  <%= label_tag(:link, "Link:") %>
+  <%= f.text_field :link, :class => "form-control" %></br>
+  <%= label_tag(:random_string, "String:") %>
+  <%= f.text_field :random_string, :class => "form-control" %></br>
+
+  <%= f.submit "Create Your Own", :class => "btn btn-danger" %>
+<% end %>
+</div>
+

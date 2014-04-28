@@ -1,0 +1,9 @@
+<h1>Edit A Rit</h1>
+
+<%= form_for @url do |f| %>
+  
+  <%= label_tag(:link, "Link:") %>
+  <%= f.text_field :link, :class => "form-control" %></br>
+
+  <%= f.submit "Update", :class => "btn btn-danger" %>
+<% end %>

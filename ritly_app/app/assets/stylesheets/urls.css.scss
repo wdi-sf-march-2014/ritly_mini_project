@@ -1,0 +1,30 @@
+// Place all the styles related to the urls controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+body {
+     text-align: center;
+     background-color: #22A7F0;
+}
+a {
+	color: black;
+	font-size: 20px;
+}
+
+
+#paste {
+	list-style-type: none;
+	font-weight: bold;
+	color: #2C3E50;
+}
+
+th {
+	text-align: center;
+}
+
+table {
+	background-color: #BFBFBF;
+}
+
+thead {
+	background-color: #95A5A6;
+}
