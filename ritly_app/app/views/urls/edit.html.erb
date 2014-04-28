@@ -1,0 +1,9 @@
+<h2>Change the website your code connects to</h2><br>
+<%= form_for @url do |f| %>
+  
+  <%= label_tag(:link, "Your current website url:") %>
+  <%= f.text_field :link,  :class => "form-control" %></br><br>
+
+
+  <%= f.submit "Submit Changes", :class => "buttons" %>
+<% end %>

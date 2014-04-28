@@ -1,0 +1,24 @@
+<h1>Ritly.com</h1>
+<h5>Because it takes too long to type a complete url</h5>
+
+
+
+<%= form_for @url do |f| %>
+  
+  <%= label_tag(:link, "http://") %>
+  <%= f.text_field :link,  :class => "form-control" ,:placeholder => "Enter a URL to Shorten"%>
+
+  <%= f.submit "Shorten", :class => "buttons" %>
+<% end %><br>
+
+
+
+
+<%= link_to "Create your own custom url shortcut!", new_custom_path %><br><br>
+
+<%= link_to "View the Ritly Links Library (Home)", urls_path %>
+
+<%#= button_to "Click Here", {controller: :urls, action: :new_custom}, :method => :get, :class => "btn btn-success" %><br />
+
+<%#= button_to "All Ritlies", {controller: :urls, action: :index}, :method => :get, :class => "btn btn-success" %><br />
+

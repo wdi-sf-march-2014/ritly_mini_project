@@ -1,0 +1,18 @@
+<h2>Create a customized link to your favorite site</h2>
+
+
+<%= form_for @url do |f| %>
+  
+  <%= label_tag(:link, "http://") %>
+  <%= f.text_field :link,  :class => "form-control" ,:placeholder => "Enter a URL to Shorten"%><br>
+
+  <%= label_tag(:random_string, "Custom Code (min. 5 characters):") %>
+  <%= f.text_field :random_string,  :class => "form-control", :placeholder => "Enter word or number" %></br>
+
+
+  <%= f.submit "Create Custom Link", :class => "buttons" %>
+<% end %><br>
+
+
+
+<%= link_to "View the Ritly Links Library (Home)", urls_path %>

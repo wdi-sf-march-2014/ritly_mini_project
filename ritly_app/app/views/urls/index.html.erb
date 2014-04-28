@@ -1,0 +1,13 @@
+
+<h2>Ritly Links Library</h2>
+
+<% @urls.each do |url| %>
+  
+  <%= link_to url["link"], url_path(url[:id]) %>
+
+  <br>
+
+<% end %>
+
+<br><br>
+<%= button_to "Add New Ritly", {controller: :urls, action: :new}, :method => :get, :class => "buttons" %><br />
