@@ -1,7 +1,1 @@
-<h1>Url Show Page </h1>
-
-<%= link_to @url.link, @url.shorthand_link %>
-<%= @full_path %>
-
-<%= link_to "HOME", new_url_path %>
-
+<h2><%= link_to @url.shorthand_link, go_path(@url.shorthand_link)%></h2>

@@ -3,6 +3,7 @@
 
 	<%= label_tag(:link, "Link:") %>
 	<%= f.text_field :link %></br>
+	<%= f.hidden_field :shorthand_link, { :value => SecureRandom.urlsafe_base64(8) } %>
 
 	<% f.submit "Link me" %>
 

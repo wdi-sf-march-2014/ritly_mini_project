@@ -14,12 +14,8 @@ class UrlsController < ApplicationController
 	end
 
 	def go
-		@url = Url.find_by link: params[:shorthand_link]
-    	if @url
-      		redirect_to @url.link
-    	else
-      		redirect_to root_path
-    	end
-    end
+		@url = Url.find_by_shorthand_link(params[:shorthand_link])
+		redirect_to "http://"+ @url.link
+	end
 
 end
