@@ -1,0 +1,9 @@
+<h1>Create page for Url</h1>
+<%= form_for @urls do |f| %>
+
+	<%= label_tag(:link, "Link:") %>
+	<%= f.text_field :link %></br>
+
+	<% f.submit "Link me" %>
+
+<% end %> 
