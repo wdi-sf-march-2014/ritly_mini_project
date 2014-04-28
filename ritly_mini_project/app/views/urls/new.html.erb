@@ -11,6 +11,7 @@
     <th>Code</th>
     <th>Created at </th>
     <th>Updated at </th>	
+    <th>Delete</th>
 	</tr>
 	</thead>
     <tbody>
@@ -21,6 +22,7 @@
     <td><%= link_to url.random_string %></td>
     <td><%= link_to url.created_at %></td>
     <td><%= link_to url.updated_at %></td>
+    <td><%= link_to 'Delete', url_path(url), :method => :delete, data: { :confirm => 'Are you sure?'}, :class => 'btn-danger btn-sm' %></td>
     </tr>
     </tbody> 
     <% end %> 
