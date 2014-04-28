@@ -1,0 +1,10 @@
+<h1>Create a shorter URL!</h1>
+<%= form_for @url do |form| %>
+
+  <%= label_tag(:link, "URL:") %>
+  <%= form.text_field :link %></br>
+
+  <%= form.submit "Shorten" %>
+<% end %>
+
+<%-# add code to model that generates random string and associates with user inputs -%>

@@ -1,0 +1,9 @@
+<h1>Index Page!</h1>
+
+
+
+<%= link_to "Shorten a URL", new_url_path %>
+
+<% @urls.each do |url| %>
+    <li><%= link_to url.link, url_path(url.id) %></li>
+<% end %>
