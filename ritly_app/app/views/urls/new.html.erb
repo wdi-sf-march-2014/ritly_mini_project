@@ -1,0 +1,13 @@
+<h1> Create A New Url for your Favorite Webpage!  </h1>
+<%= form_for @url do |f| %>
+
+	<%= label_tag(:link, "Link:") %>
+	<%=  f.text_field :link,  :class => "form control" %></br>
+ <!-- autopopulate submit field with "https://www." -->
+
+	
+	
+	 <%= f.submit "Create", :class => "btn btn-danger" %></br>
+	 <a href="/urls"> <%="To All your Urls"%> </a>
+
+<% end %>

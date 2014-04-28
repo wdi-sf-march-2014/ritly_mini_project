@@ -1,0 +1,10 @@
+<h1>This is your New Unique URL</h1>
+<!-- <p>Link: <%= @url['link']%></p>
+<p>Random_string: <%= @url['Random_string']%></p>
+
+<%= link_to "Back To Url List",urls_path%>  -->
+
+<%= @url['link'] %> <a href="/urls/go/<%=@url['random_string']%>"> <%= @url['random_string'] %></a></br>
+
+<a href="/"> <%="Create Another Url"%> </a></br>
+<a href="/urls"> <%="To All your Urls"%> </a>
