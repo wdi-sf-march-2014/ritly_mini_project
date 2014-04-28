@@ -1,0 +1,18 @@
+<h1>Edit Link</h1>
+<!--
+def edit
+		@url = Url.find(params[:id])
+def update
+		@url = Url.find(params[:id])
+		@url.update url_params
+		redirect_to url_path(@url)-->
+
+</br>
+
+		<%= form_for @url do |f| %>
+		<%= label_tag(:link, "Link") %>
+		<%= f.text_field :link, :size => 40, :class => "form-control"%>
+		<input class="btn btn-default" type="submit" value="Update">
+	
+<% end %></br>
+

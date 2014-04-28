@@ -1,0 +1,18 @@
+<h1>Link Details</h1></br>
+<!--
+def show
+		@url = Url.find(params[:id])
+def go #redirects to alternate url 
+		@url = Url.find_by random_string: params[:random_string]-->
+
+<p>Original Link: <%= @url.link %></p>
+<p>Follow Link: <button type="button" class="btn btn-default btn-xs"><a href="/urls/go/<%=@url.random_string%>"><%=@url.random_string%></a></p></button></br></br>
+<!--
+def destroy
+		Url.find(params[:id]).destroy
+		redirect_to root_path-->
+
+<button type="button" class="btn btn-warning btn-sm"><%= link_to "Edit",edit_url_path %></button>
+<button type="button" class="btn btn-danger btn-sm"><%= link_to "Delete", @url, method: :delete, data: { confirm: "You sure?" } %></button></br></br>
+<button type="button" class="btn btn-warning btn-sm"><%= link_to "See all Links", urls_path%></button></br></br>
+<button type="button" class="btn btn-warning btn-sm"><%= link_to "Shorten a Link",root_path%></button>

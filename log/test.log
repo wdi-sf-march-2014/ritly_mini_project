@@ -1,0 +1,315 @@
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.7ms)[0m  INSERT INTO "urls" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:42:21 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 19:42:21 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "urls" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:42:40 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 19:42:40 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "urls" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:44:34 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 19:44:34 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "urls" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:45:24 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 19:45:24 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "urls" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:46:43 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 19:46:43 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:47:25 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:47:25 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "urls" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 19:47:25 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 19:47:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#new as HTML
+  Rendered urls/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 6ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:52:05 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:52:05 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "urls" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 19:52:05 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 19:52:05 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#new as HTML
+  Rendered urls/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.4ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:52:05 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:52:05 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#new as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.0ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:53:10 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:53:10 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#index as HTML
+  Rendered urls/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.3ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 19:53:10 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:53:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#new as HTML
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:53:10 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:53:10 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "urls" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 19:53:10 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 19:53:10 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#new as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:54:05 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:54:05 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "urls" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 19:54:05 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 19:54:05 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#new as HTML
+  Rendered urls/new.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:54:05 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:54:05 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#new as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 19:54:05 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:54:05 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:54:05 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:54:05 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.2ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#edit as HTML
+  Parameters: {"id"=>"20"}
+  [1m[35mUrl Load (0.8ms)[0m  SELECT "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT 1  [["id", "20"]]
+  Rendered urls/edit.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 4.5ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.3ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#edit as HTML
+  Parameters: {"id"=>"21"}
+  [1m[35mUrl Load (0.3ms)[0m  SELECT "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT 1  [["id", "21"]]
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "urls" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#new as HTML
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 19:57:43 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#new as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (4.8ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "urls" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#new as HTML
+  Rendered urls/new.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 5ms (Views: 4.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#new as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#edit as HTML
+  Parameters: {"id"=>"30"}
+  [1m[36mUrl Load (0.6ms)[0m  [1mSELECT "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT 1[0m  [["id", "30"]]
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.6ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#edit as HTML
+  Parameters: {"id"=>"31"}
+  [1m[36mUrl Load (0.3ms)[0m  [1mSELECT "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT 1[0m  [["id", "31"]]
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:03 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.9ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"34"}
+  [1m[35mUrl Load (0.8ms)[0m  SELECT "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT 1  [["id", "34"]]
+  Rendered urls/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 7ms (Views: 4.6ms | ActiveRecord: 0.8ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#show as HTML
+  Parameters: {"id"=>"35"}
+  [1m[35mUrl Load (0.3ms)[0m  SELECT "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT 1  [["id", "35"]]
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.3ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#index as HTML
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#index as HTML
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "urls" ("created_at", "updated_at") VALUES ($1, $2) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00], ["updated_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#new as HTML
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms)
+  [1m[36m (0.2ms)[0m  [1mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+Processing by UrlsController#new as HTML
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms)
+  [1m[35m (0.1ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00]]
+  [1m[35m (0.2ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#edit as HTML
+  Parameters: {"id"=>"41"}
+  [1m[36mUrl Load (0.3ms)[0m  [1mSELECT "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT 1[0m  [["id", "41"]]
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "urls" ("created_at", "link", "random_string", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["created_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00], ["link", "http://www.google.com"], ["random_string", "ABCDEF"], ["updated_at", Sat, 26 Apr 2014 20:17:25 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Processing by UrlsController#edit as HTML
+  Parameters: {"id"=>"42"}
+  [1m[36mUrl Load (0.3ms)[0m  [1mSELECT "urls".* FROM "urls" WHERE "urls"."id" = $1 LIMIT 1[0m  [["id", "42"]]
+Completed 200 OK in 2ms (Views: 0.7ms | ActiveRecord: 0.3ms)
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (3.1ms)[0m  INSERT INTO "urls" ("created_at", "link", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 20:31:24 UTC +00:00], ["link", "http://www.google.com"], ["updated_at", Sat, 26 Apr 2014 20:31:24 UTC +00:00]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (2.8ms)[0m  INSERT INTO "urls" ("created_at", "link", "updated_at") VALUES ($1, $2, $3) RETURNING "id"  [["created_at", Sat, 26 Apr 2014 20:32:01 UTC +00:00], ["link", "http://www.google.com"], ["updated_at", Sat, 26 Apr 2014 20:32:01 UTC +00:00]]
+  [1m[36m (0.2ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  ROLLBACK

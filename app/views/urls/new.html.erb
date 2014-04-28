@@ -1,0 +1,18 @@
+<h1> Ritly</h1>
+<h4>Enter a URL and Ritly will shorten it!</h4></br></br>
+<!--
+def new
+		@url = Url.new
+def create
+		@url = Url.create url_params
+		@url['random_string']= SecureRandom.urlsafe_base64(3)
+		redirect_to url_path(@url)-->
+
+<%= form_for @url do |f| %>
+  
+  <%= label_tag(:link, "Link:") %>
+  <%= f.text_field :link, :value => "http://www."%>
+  <input class="btn btn-default" type="submit" value="Create Shortened Link">
+<% end %></br></br>
+
+<button type="button" class="btn btn-warning btn-sm"><%= link_to "See all Links", urls_path%></button>
