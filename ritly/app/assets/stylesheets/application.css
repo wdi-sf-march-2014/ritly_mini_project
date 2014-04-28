@@ -19,7 +19,7 @@
 
  .wow {
   font-family: 'Trade Winds', 'cursive';
-  text-align: center;
+  margin-left: 426px;
   font-size: 195px;
   font-weight: 600;
   margin-top: -9px;
@@ -41,7 +41,7 @@
   padding-bottom: 50px;
 }
 .box {
-  background-color: rgba(67, 195, 93, 0.48);
+  background-color: rgba(67, 118, 195, 0.48);
 width: 331px;
 min-height: 116px;
 margin-left: 134px;
