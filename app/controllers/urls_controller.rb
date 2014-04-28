@@ -9,12 +9,15 @@ class UrlsController < ApplicationController
 	end
 
 	def create
-		#if new == "http://www."
-			#redirect_to root_path
-		#else
-			@url = Url.create url_params
+		@url = Url.create url_params
+			@url['random_string']= SecureRandom.urlsafe_base64(3)
+		if @url.save
 			redirect_to url_path(@url)
-		#end
+		else
+			error_messages = @url.errors.messages.values.flatten
+			flash.now[:errors] = error_messages
+			render action: "new"
+		end
 	end
 
 	def show
