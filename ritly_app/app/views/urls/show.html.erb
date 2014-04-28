@@ -1,12 +1,9 @@
 <h2>Done! Your link is shortened</h2>
 <h5>Imagine all the time you'll save</h5>
-<!-- <p>Link: <%= @url['link']%></p> -->
+
 <h2 id="code">Code: <%= @url['random_string']%></h2>
 <p>Your shortened url is <a href=<%=@url.link%>>localhost:3000/go/<%=@url.random_string%></a><br><br>
-<!-- The following if statement will continue to be -->
-<!-- nil, until we add data to done in the DB. -->
 
-<!-- <a href= "localhost:3000/go/<%=@url.random_string%>/preview">Preview your Link</a><br> -->
 
 <%= link_to "Preview your Link", preview_path(@url.random_string) %>
 

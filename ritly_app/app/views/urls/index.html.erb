@@ -1,9 +1,8 @@
-<link rel="icon" type="image/png" href="/favicon.png" /> 
 
 <h2>Ritly Links Library</h2>
 
 <% @urls.each do |url| %>
-  <!-- Link to the show method in the controller -->
+  
   <%= link_to url["link"], url_path(url[:id]) %>
 
   <br>
