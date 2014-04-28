@@ -1,0 +1,18 @@
+<h1>Create a New Url</h1>
+<%= form_for @url do |f| %>
+<p>
+  <%= label_tag(:link, "Link:") %>
+  <%= f.text_field :link %></br>
+</p>
+
+<p>
+  <%= label_tag(:random_string, "Random String:") %> 
+  <%= f.text_field :random_string %></br>
+</p>
+
+<p>  
+  <%= f.submit "Create Url" %>
+</p>
+<% end %>
+
+<!-- this is a random comment -->

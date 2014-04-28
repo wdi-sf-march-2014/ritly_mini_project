@@ -3,7 +3,4 @@ RitlyApp::Application.routes.draw do
 
   resources :urls
 
-  # require 'securerandom'
-  # token = SecureRandom.urlsafe_base64
-  # p token
 end
