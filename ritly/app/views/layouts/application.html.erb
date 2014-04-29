@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ritly</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<header>
+	<ul class = "nav nav-tabs" color = "white">
+		<li><a href = "/"><span>Rifly</span></a></li>
+		<li><a href = "/urls/all_urls"><span>All Codes</span></a></li>
+		<li><a href = "/about"><span>About</span></a></li>
+	<ul/>
+</header>
+	<%= yield %>
+
+</body>
+</html>

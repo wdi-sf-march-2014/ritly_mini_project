@@ -1,0 +1,17 @@
+<div class="container" id="bg">
+	<div class="row">
+		<div class="col-xs-2">
+		</div>
+		<div class="col-xs-8 text-center">
+			<h1 class="text-center">Ritly</h1>
+			<%= form_for @url do |f| %>
+			<%= label_tag(:original_link, "Paste a link to shorten it:") %>
+			<%= f.text_field :original_link %>
+			<%= f.text_field :ritly_link, :placeholder => "(optional) custom code" %>
+			<%= f.submit "Ritly-fy", :class => "btn btn-danger" %>
+			<!-- TODO add input validation -->
+	<% end %>
+		</div>
+		<div class="col-xs-2">
+		</div>
+	</div>

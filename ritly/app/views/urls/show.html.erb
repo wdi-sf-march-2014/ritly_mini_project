@@ -1,0 +1,11 @@
+Original link: <%= @url.original_link %></br>
+<%= form_for @url do |f| %>
+	<%= label_tag(:ritly_link, "Ritly link: http://localhost:3000/go/") %>
+	<%= f.text_field :ritly_link %>
+	<%= f.submit "edit", :class => "btn btn-warning" %>
+<% end %>
+<a href = "/">Back to homepage</a></br>
+
+
+<iframe  width="600" height="800" src="http://www.codecademy.com/dashboard"></iframe>
+<iframe width="450" height="500" src="http://www.codecademy.com/dashboard"></iframe>

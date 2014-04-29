@@ -1,0 +1,37 @@
+<style type="text/css">
+
+form {
+	display: inline;
+}
+
+</style>
+
+<table class = "table table-bordered table-hover table-condensed">
+	<tr>
+		<th>Original Link</th>
+		<th>Ritly Link</th>
+		<th>Preview</th>
+		<th>Views count</th>
+	</tr>
+	<% @urls.each do |url| %>
+		<tr>
+		<td><%= url.original_link %></td>
+		<td>
+			<%= form_for url do |f| %>
+				<%= f.text_field :ritly_link %>
+				<%= f.submit "edit", :class => "btn btn-warning" %>
+			<% end %>
+			<%= link_to "delete", url, method: :delete, data: { confirm: "You sure?" } , :class => "btn btn-danger btn-xs" %>
+		</td>
+		<td><a href = "/urls/<%= url.id%>">preview</a></td>
+		<td><%= url.views_count %></td>
+		</tr>
+	<% end %>
+</table>
+
+
+<!-- 
+<% @urls.each do |url| %>
+	<%= url.inspect%>
+<% end %>
+ -->
