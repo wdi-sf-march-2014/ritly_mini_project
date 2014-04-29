@@ -1,0 +1,19 @@
+development:
+  adapter: postgresql
+  database: todo_development
+  host: localhost
+  pool: 5
+  timeout: 5000
+
+test:
+  adapter: postgresql
+  database: todo_test
+  host: localhost
+  pool: 5
+  timeout: 5000
+
+production:
+  adapter: postgresql
+  database: todo
+  pool: 5
+  timeout: 5000
