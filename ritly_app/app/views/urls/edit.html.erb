@@ -1,0 +1,7 @@
+edit.html.erb
+
+<%= form_for @url do |f| %>
+<%= label_tag(:link, "Enter your URL:") %>
+<%= f.text_field :link, :autofocus => true, :required => true %> 
+<%= f.submit "Update Ritly" %>
+<% end %> 
