@@ -1,0 +1,10 @@
+<h1> Your New Link! </h1>
+
+<p>Old Link: <%= @url['link']%></p>
+<p>New Ritly: <%= @url['random_string']%></p> 
+
+# Show page @url variable: 
+
+<%= link_to @url.random_string, go_path(@url.random_string) %>
+
+
