@@ -1,0 +1,126 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require bootstrap
+ *= require_self
+ *= require_tree .
+ */
+
+h1 {
+	text-align: center;
+	font-size: 110px;
+	color: black;
+	text-decoration: none;
+}
+
+.header-link {
+	text-decoration: none;
+	color:black;
+	font-family: 'Londrina Solid', 'cursive';
+}
+
+/*.page-header{
+	padding:5px;
+	background:white;
+	color:black;
+}*/
+
+body {
+	background: url("http://i.imgur.com/UFbpzpa.jpg");
+	display: block;
+	background-size:cover;
+	margin-bottom: 30px;
+}
+
+p {
+	text-align: center;
+	font-family: 'PT Sans Narrow', 'sans-serif';
+	font-size: 20px;
+}
+
+.h2 {
+	display:inline;
+}
+
+.col-md-4 {
+	background: white;
+	border-radius: 60px;
+	padding: 30px;
+	border:black solid 1px;
+	margin-top: 30px;
+}
+
+.col-md-6 {
+	margin: auto;
+	background: white;	
+	border:black solid 1px;
+}
+
+.col-md-3 {
+	background: white;
+	padding:20px;
+	border-radius: 30px;
+	height:400px;
+	border:black solid 1px;
+}
+
+.col-md-9 {
+	border-radius:6px;
+	padding: 15px;
+	margin-bottom: 20px;
+	height:370px;	
+}
+
+img {
+	border-radius:30px; 
+	margin-top: -55px;
+	border:black solid 1px;
+}
+
+
+
+.btn {
+	color:black;
+	border:black solid 1px;
+}
+
+.form-control {
+	border:black solid 1px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 15px;
+	font-family: 'PT Sans Narrow', 'sans-serif';
+}
+
+.panel-heading {
+	text-align: center;
+	font-family: 'PT Sans Narrow', 'sans-serif';
+	font-size: 30px;
+}
+
+h6 {
+	font-family: 'PT Sans Narrow', 'sans-serif';
+	text-align: center;
+}
+
+.footer {
+	color:black;
+	text-decoration: none;
+	text-align: center;
+	font-size: 23px;
+}
+
+.table_page {
+	color:white;
+	font-size: 23px;
+}
+

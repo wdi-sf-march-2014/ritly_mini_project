@@ -1,0 +1,31 @@
+<div class="row">
+	<div class="col-md-3">
+		<p>Your new generated code is: <% @url.random_string %></p>
+		<% link = @url.random_string %>
+		<p><%= link_to link, go_path(link), :class => "btn btn-success" %></p>
+		<p>Go to <%= link_to "localhost:3000/go/" + @url.random_string, go_path(link) %> to visit your link</p>
+		<p>Click <%= link_to "here ", edit_url_path %> to edit your link</p>
+		<p><%= link_to "Create a new Ritly",urls_path, :class => "btn btn-info" %></p> 
+		<p><%= link_to "View all Ritlies", new_url_path, :class => "btn btn-info" %></p>
+	</div>
+	<br></br>
+	<div class = "col-md-9">
+		
+		<a href = "<%= go_path(@url.random_string) %>"><img src="http://api.webthumbnail.org?width=800&height=400&screen=1024&url=<%=@url.link%>"></a>
+	</div>
+</div>
+
+
+<h6> <a class = "footer" href = '/'> Home </a></h6>
+
+
+
+	
+
+
+
+
+
+
+
+

@@ -1,0 +1,36 @@
+
+
+<div class="panel panel-default">
+  <div class="panel-heading">ALL RITLIES</div>
+  <table class="table table-hover">
+  	
+  	<thead>
+    <tr>
+  	<th>#</th>
+    <th>Link</th>
+    <th>Code</th>
+    <th>Created at </th>
+    <th>Updated at </th>	
+    <th>Delete</th>
+	</tr>
+	</thead>
+    <tbody>
+    <tr>
+    <% @urls.each do |url| %>
+  	<td><%= link_to url.id%> <br></td>
+  	<td><%= link_to url.link %></td>
+    <td><%= link_to url.random_string %></td>
+    <td><%= link_to url.created_at %></td>
+    <td><%= link_to url.updated_at %></td>
+    <td><%= link_to 'Delete', url_path(url), :method => :delete, data: { :confirm => 'Are you sure?'}, :class => 'btn-danger btn-sm' %></td>
+    </tr>
+    </tbody> 
+    <% end %> 
+  </table> 
+</div>
+
+<h6> <a class = "table_page" href = '/'> Home </a></h6>
+
+
+
+
