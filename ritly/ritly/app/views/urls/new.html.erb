@@ -1,0 +1,13 @@
+<center><div class="Title">
+<h1>Ritly</h1>
+<br><br><br>
+
+<%= form_for @urls do |f| %>
+  <%= f.label :link %>
+  <%= f.text_field :link %>
+  <%= f.submit %>
+<% end %>
+<br><br><br>
+<%= button_to "view all Ritlys", results_path, method: "get" %>
+</div></center>
+
