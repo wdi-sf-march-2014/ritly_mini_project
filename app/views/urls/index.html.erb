@@ -1,0 +1,16 @@
+<div class="container">
+<div class="jumbotron" style="background-color: rgba(50,250,250,10); color: red; border: 2px solid black">
+
+
+<%= link_to "New Url Item", new_url_path %>
+
+<% @url.each do |url| %>
+    <li><%=url.link%></li>
+    <li><%=url.random_string%></li>
+<% end %>
+  
+</div>
+</div>
+
+<div class="container">
+</div>  
