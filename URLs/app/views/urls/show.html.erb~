@@ -1,0 +1,4 @@
+
+<h1> THE SHOW PAGE </h1>
+<p> YOUR link: <%= @url['link'] %></p> 
+<p> THE Ritly: <%= @url['random_string'] %></p> 
