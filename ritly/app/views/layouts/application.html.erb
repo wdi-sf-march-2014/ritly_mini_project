@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ritly</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+   <link href='http://fonts.googleapis.com/css?family=Lobster|Droid+Serif:400,700|Poiret+One|Avenir' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+<div class="navlinks">
+	
+	<div class="homelink">
+		<h4><%= link_to 'Home', root_path %></h4>
+	</div>
+
+	<div class="recentlink">
+		<h4><%= link_to 'Recent Ritlys', urls_path %></h4>
+	</div>
+
+</div>
+<br>
+<br>
+
+<%= yield %>
+
+</body>
+</html>

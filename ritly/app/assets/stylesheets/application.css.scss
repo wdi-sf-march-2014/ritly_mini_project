@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require bootstrap.min
+ *= require_self
+ *= require_tree .
+ */
+
+/*
+body.show {
+text-align: center;
+background-image: url("http://static.hdw.eweb4.com/media/wallpapers_1920x1080/computers/1/1/web-browsers-computer-hd-wallpaper-1920x1080-4222.jpg");
+background-size: cover;
+color:white;
+}
+
+body.edit{
+	text-align: center;
+	background-image: url("http://rhyscorhys.files.wordpress.com/2013/05/editing.jpg");
+	background-size: cover;
+}
+
+body.new {
+	background-image: url("http://www.botonakis.com/wp-content/uploads/2013/06/people_working_internet_earth.jpg");
+	background-size: cover;
+	color:white;
+	text-align: center;
+
+}
+
+body.results{
+	background-image: url("http://www.hdwallpapers.in/walls/abstract_color_background_picture_8016-wide.jpg");
+	background-size: cover;
+	text-align: center;
+	color:white;
+}
+*/
+
+.homelink{
+	float: left;
+	margin-left: 2em;
+	top: 1em;
+	position: relative;
+}
+
+.recentlink{
+	float: left;
+	margin-left: 3em;
+	top: 1em;
+	position: relative;
+}
+
+body{
+	background-image: url("http://37.media.tumblr.com/a408ad9af259cf827ed4599d60bcb0a9/tumblr_myebwtELvb1st5lhmo1_1280.jpg");
+	background-size: cover;
+}
+
+input, select, textarea { 
+color: black; 
+}
+
+table {
+	border-spacing: 0.5rem;
+	text-align: center;
+}
+
+td{
+ 	border: 1px solid #999;
+  	padding: 0.5rem;	
+}
+
+th {
+
+  padding: 0.5rem;
+  text-align: center;
+}
+
+a{
+	color: blue;
+}
+
+a:hover{
+	color: red;
+}
