@@ -5,12 +5,13 @@ class UrlsController < ApplicationController
 	end
 
 	def create
-        num_gen = SecureRandom.urlsafe_base64(4)
-        temp = Url.create(url_params)
-        temp.random = num_gen
-        temp.save
-        last = Url.last.id
-        redirect_to url_path(last)
+    num_gen = SecureRandom.urlsafe_base64(4)
+    temp = Url.create(url_params)
+    temp.random = num_gen
+    temp.save
+    last = Url.last.id
+    redirect_to url_path(last)
+    #redirect_to url (same thing as url_path url.id)
 	end
 
 	def edit
@@ -32,7 +33,7 @@ class UrlsController < ApplicationController
 		redirect_to root_path
 	end
 
-	def results
+	def index
 		@url = Url.all
 		# count=@url.countclicks+1
 		# @url.update_attributes(:countclicks=> count)
@@ -41,6 +42,7 @@ class UrlsController < ApplicationController
 	def go
 		@url = Url.find_by_random(params[:random])
 		redirect_to "http://"+ @url.link
+    #can also use redirect_to url.link
 	end
 
   private

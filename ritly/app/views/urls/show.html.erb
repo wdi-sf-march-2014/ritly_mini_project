@@ -1,18 +1,10 @@
-<body class="show">
 
-<h1>Your new link is: </h1>
- 
+<div class="container-newlink">
+	<h1>Success! Here is your new RitLink: </h1>
+	
+	<div class="shortlink">
+		<h2><%= link_to @url.random, go_path(@url.random)%></h2>
+	</div>
 
-<h2><%= link_to @url.random, go_path(@url.random)%></h2>
+</div>
 
-<br />
-
-<%= button_to "Edit link", edit_url_path, method: "get", :class => "btn btn-primary"%>
-
-<br />
-
-<%= button_to "View all Ritlys", results_path, method: "get", :class => "btn btn-success" %>
-
-
-
-</body>

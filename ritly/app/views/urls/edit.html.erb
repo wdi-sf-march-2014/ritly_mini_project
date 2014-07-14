@@ -1,23 +1,16 @@
-<body class="edit">
 
-<h2>Edit your link:</h2>
+<h2 style="text-align:center">Edit your link:</h2>
 <br />
-<%= form_for @url do |f| %>
+<div class="col-md-4 col-md-offset-4"
+<%= bootstrap_form_for @url do |f| %>
 
   <%= label_tag(:link, "Original Link:") %>
-  <%= f.text_field :link%></br>
+  <%= f.text_field :link, hide_label: true%></br>
 
   <%= label_tag(:random, "Short link:") %>
-  <%= f.text_area :random %></br>
+  <%= f.text_field :random, hide_label: true %></br>
 
-  <%= f.submit "Update", :class => "btn btn-info" %>
+  <%= f.submit "Update", :class => "btn btn-default" %>
 <% end %>
 <br />
 
- <!--  <%#= link_to "View Link", url_path, :class => "btn btn-primary" %> -->
-	<!-- <br/>
-  	<br /> -->
-
-  <%= link_to "Home", '/', :class => "btn btn-success" %>
-
-</body>

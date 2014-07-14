@@ -1,0 +1,25 @@
+
+<h1 style="text-align:center">Recent Ritly's</h1>
+
+
+<table style="margin:auto;">
+  <tr>
+    <th><h3>Original</h3></th>
+    <th><h3>New Link</h3></th>
+    <th><h3>Delete</h3></th>
+    <th><h3>Edit</h3></th>
+  </tr>
+
+<%@url.each do |url| %>
+	<tr>		
+<td><%=url.link %> </td>
+<td><%= link_to url.random, go_path(url.random) %> </td>
+
+<td><%= link_to "Delete", url, method: :delete, data: { confirm: "You sure?" }%></td>
+
+<td><%= link_to "Edit", edit_url_path(url[:id])%></td>
+</tr>
+
+<%end%>
+</table>
+<br />

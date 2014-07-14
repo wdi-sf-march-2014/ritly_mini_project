@@ -1,3 +1,22 @@
 // Place all the styles related to the urls controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+#container-links{
+	top: 8em;
+	position: relative;
+}
+
+.container-newlink{
+	top: 7em;
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	width: 550px;
+}
+
+.shortlink{
+	text-align: center;
+}
+
