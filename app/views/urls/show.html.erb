@@ -2,7 +2,7 @@
   <h1 class="show"> Your random generated link is:</h1>
   <h2> <%= @url.random_string %> </small></h2><br>
     <p>Links you to:  <em><%= @url.link %></em> </p>
-    <p>Put <b>localhost:3000/go/<%= @url.random_string %></b> in the browser to go to your site</p>
+    <p>Put <b>http://my-ritly-app.herokuapp.com/<%= @url.random_string %></b> in the browser to go to your site</p>
 
     <div class ="move">
     <%= link_to "Oops! Wrong URL", edit_url_path(@url.id), :class => "btn btn-default btn-xs" %>
