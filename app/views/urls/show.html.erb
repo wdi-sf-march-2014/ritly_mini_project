@@ -1,0 +1,22 @@
+<div class="container">
+  <h1 class="show"> Your random generated link is:</h1>
+  <h2> <%= @url.random_string %> </small></h2><br>
+    <p>Links you to:  <em><%= @url.link %></em> </p>
+    <p>Put <b>http://my-ritly-app.herokuapp.com/<%= @url.random_string %></b> in the browser to go to your site</p>
+
+    <div class ="move">
+    <%= link_to "Oops! Wrong URL", edit_url_path(@url.id), :class => "btn btn-default btn-xs" %>
+
+    <% if @url.link.start_with?('http://') == true || @url.link.start_with?('https://') == true %>
+      <%= link_to "Go to your webpage", (@url.link), :class => "btn btn-default btn-xs" %> 
+    <% else %>
+
+    <button class="btn-default btn-xs" id="goto"><a href= "http:///<%=@url.link%>">Go to your webpage</a></button>
+  
+    <% end %>
+    <%= link_to "Main Page", new_url_path, :class => "btn btn-default btn-xs" %>
+    
+    <%= link_to "All Ritlys", urls_path, :class => "btn btn-default btn-xs" %>
+  </div>
+</div>
+

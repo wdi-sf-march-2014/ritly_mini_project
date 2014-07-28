@@ -1,0 +1,26 @@
+
+<div class ="container">
+<h1>All Ritlys</h1>    
+  
+<% @urls.each do |url| %>
+
+  <table class="table table-striped table-bordered table-condensed table-hover">
+   <thead>
+    <div class="row>"
+    <tr>
+    <th class ="col-xs-6">Link</th>
+    <th class ="col-xs-6">Generated String</th>
+  </div>
+
+
+    </tr>
+  <tr>
+    <th><%= link_to url.link, url_path(url.id) %></th>
+    <th><%= url.random_string %></th>
+
+  </tr>
+
+  </table>
+
+  <% end %>
+</div>

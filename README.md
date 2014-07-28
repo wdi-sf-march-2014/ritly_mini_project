@@ -1,3 +1,19 @@
+<h4>This was another mini-project assigned over the weekend during my WDI experience. The idea is to make a URL shortening
+application that allows users to put it any valid URL and the app gives back a random string that shortens the link. Useful 
+for twitter and other places where character limits apply. Below is the original instructions given by WDI instructors:</h4>
+
+========================================================
+========================================================
+========================================================
+========================================================
+========================================================
+========================================================
+========================================================
+========================================================
+========================================================
+========================================================
+========================================================
+
 ##Ritly
 
 You are going to build a url-shortening app similar to [Bitly](https://bitly.com/), called Ritly. The challenge is going to be understanding the flow of control in a Rails app.  
